@@ -1,0 +1,23 @@
+---
+layout: td-page
+title: Trivial Discourse
+---
+
+<div class="row index">
+	{% for post in site.posts %}
+	<div class="article col-lg-4 col-md-6 col-sm-6">
+		<a rel="next" href="{{ post.url }}">
+			<div class="title">
+				<h2>{{ post.title }}</h2>
+			</div>
+			<div class="image">
+				<img class="img-responsive" src="https://bc8aa47a63d1043c81c98f1a56924e35230820d8.googledrive.com/host/0B2BuKToUYT5wVUtRWDQ5R21kV1E/whalers.png" alt="Whaling ships in harbor" title="Image by Bernard McManus. For more information see article.">
+			</div>
+			<div>
+				<p>A look at a few examples of real life vigilantes, taking the law in their own hands. Are they right in taking action, or just criminals themselves?</p>
+			</div>
+		</a>
+		<a class="readmore" href="post/vigilante-justice.jsp">Continue reading</a>
+	</div>
+	{% endfor %}
+</div>
