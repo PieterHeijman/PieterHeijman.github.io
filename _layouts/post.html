@@ -64,7 +64,39 @@
 		</div>
 		<div class="content">
 			<div class="container post">
-			{{ content }}
+			<h1>{{ page.title }}</h1>
+			<hr>
+			<article>
+				<img src="{{ page.image_url }}" alt="" class="img-responsive" style="max-width: 100%;" title="{{ page.image_credits }}">
+				<div class="photocredits"><a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a></div>
+				<div class="advert col-lg-12 col-md-12 col-sm-12">
+					<ins class="adsbygoogle"
+						 style="display:block"
+						 data-ad-client="ca-pub-8229111309021610"
+						 data-ad-slot="1446574905"
+						 data-ad-format="auto"></ins>
+					<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			
+				{{ content }}
+			</article>
+			<hr>
+			<span>If you enjoyed this article, please consider sharing it with your friends.</span>
+			<div class="addthis_sharing_toolbox"></div>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5371f8192678d3ff"></script>
+			<br>
+				<div class="sources">
+					<strong>In-depth reading</strong><br>
+					<a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a>
+					<strong>Other articles on Trivial Discourse</strong><br>
+					<ul>
+						<li><a href="{{ page.prev.url }}" rel="prev">{{ page.prev.title }}</a></li>
+						<li><a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a></li>
+					</ul>
+				</div>
+			<hr>
 			</div>
 			<div class="container footer">
 				<p>
