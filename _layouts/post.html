@@ -89,11 +89,32 @@
 			<br>
 				<div class="sources">
 					<strong>In-depth reading</strong><br>
-					<a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a>
+					<ul>
+						{% if page.indepth_1.title %}
+						<li><a href="{{ page.indepth_1.url }}" rel="prev" target="_blank">{{ page.indepth_1.title }}</a></li>
+						{% endif%}
+						{% if page.indepth_2.title %}
+						<li><a href="{{ page.indepth_2.url }}" rel="prev" target="_blank">{{ page.indepth_2.title }}</a></li>
+						{% endif%}
+						{% if page.indepth_3.title %}
+						<li><a href="{{ page.indepth_3.url }}" rel="prev" target="_blank">{{ page.indepth_3.title }}</a></li>
+						{% endif%}
+						{% if page.indepth_4.title %}
+						<li><a href="{{ page.indepth_4.url }}" rel="prev" target="_blank">{{ page.indepth_4.title }}</a></li>
+						{% endif%}
+						{% if page.indepth_5.title %}
+						<li><a href="{{ page.indepth_5.url }}" rel="prev" target="_blank">{{ page.indepth_5.title }}</a></li>
+						{% endif%}
+					</ul>
+					<a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a><br>
 					<strong>Other articles on Trivial Discourse</strong><br>
 					<ul>
+						{% if page.prev.title %}
 						<li><a href="{{ page.prev.url }}" rel="prev">{{ page.prev.title }}</a></li>
+						{% endif %}
+						{% if page.next.title %}
 						<li><a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a></li>
+						{% endif %}
 					</ul>
 				</div>
 			<hr>
