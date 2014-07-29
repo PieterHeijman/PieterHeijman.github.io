@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Trivial Discourse</title>
+		<description>A site with useful factoids, if you consider useless factoids useful.</description>
+		<link>http://www.trivialdiscourse.com/</link>
+		
+		{% for post in site.posts %}
+			{% unless post.published == false %}
+		<item>
+			<title>{{ post.title }}</title>
+			<guid>{{ post.guid }}</guid>
+			<pubDate>{{ post.pubdate }}</pubDate>
+			<description>{{ post.description }}</description>
+			<link>{{ site.url }}{{ post.url }}</link>
+		</item>
+			{% endunless %}
+		{% endfor %}
+	</channel>
+</rss>
