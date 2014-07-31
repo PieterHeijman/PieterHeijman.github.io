@@ -1,23 +1,69 @@
 ---
 layout: td-page
 title: Trivial Discourse
+redirect_from: "/page1"
 ---
 
 <div class="row index">
-	{% for post in site.posts %}
+	{% for post in paginator.posts %}
 	<div class="article col-lg-4 col-md-6 col-sm-6">
 		<a rel="next" href="{{ post.url }}">
 			<div class="title">
 				<h2>{{ post.title }}</h2>
 			</div>
 			<div class="image">
-				<img class="img-responsive" src="https://bc8aa47a63d1043c81c98f1a56924e35230820d8.googledrive.com/host/0B2BuKToUYT5wVUtRWDQ5R21kV1E/whalers.png" alt="Whaling ships in harbor" title="Image by Bernard McManus. For more information see article.">
+				<img class="img-responsive" src="{{ post.image_url }}" title="{{ post.image_credits }}">
 			</div>
 			<div>
 				<p>{{ post.description }}</p>
 			</div>
 		</a>
-		<a class="readmore" href="post/vigilante-justice.jsp">Continue reading</a>
+		<a class="readmore" href="{{ post.url }}">Continue reading</a>
 	</div>
+	{% if forloop.index == 5 %}
+	<div class="article col-lg-4 col-md-6 col-sm-6">
+		<div class="title">
+			<h2>Advertisement</h2>
+		</div>
+		<div class="advert image">
+			
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-8229111309021610"
+			     data-ad-slot="1446574905"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="spacer">&nbsp;</div>	
+	</div>
+	{% endif %}
 	{% endfor %}
 </div>
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous page</a>
+  {% else %}
+    <span>Previous page</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
+  {% else %}
+    <span>Next page</span>
+  {% endif %}
+</div>
+{% endif %}
+<hr>

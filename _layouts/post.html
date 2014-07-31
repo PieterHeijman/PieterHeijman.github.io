@@ -57,8 +57,8 @@
 			<h3>Trivial discourse</h3>
 			<ul class="list-unstyled">
 				<li><a href="/">home</a></li>
-				<li><a href="/about.jsp">about</a></li>
-				<li><a href="/contact.jsp">contact</a></li>
+				<li><a href="/about.html">about</a></li>
+				<li><a href="/contact.html">contact</a></li>
 				<li><a href="/feed.xml" target="_blank">rss</a></li>
 			</ul>
 		</div>
@@ -106,15 +106,15 @@
 						<li><a href="{{ page.indepth_5.url }}" rel="prev" target="_blank">{{ page.indepth_5.title }}</a></li>
 						{% endif%}
 					</ul>
-					<a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a><br>
 					<strong>Other articles on Trivial Discourse</strong><br>
 					<ul>
-						{% if page.prev.title %}
-						<li><a href="{{ page.prev.url }}" rel="prev">{{ page.prev.title }}</a></li>
+						{% if page.previous.title %}
+						<li><a href="{{ page.previous.url }}" rel="prev">{{ page.previous.title }}</a></li>
 						{% endif %}
 						{% if page.next.title %}
 						<li><a href="{{ page.next.url }}" rel="next">{{ page.next.title }}</a></li>
 						{% endif %}
+						
 					</ul>
 				</div>
 			<hr>

@@ -1,5 +1,6 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
+paginate: 8
 gems:
   - jekyll-redirect-from
