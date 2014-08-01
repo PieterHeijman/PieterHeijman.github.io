@@ -39,6 +39,25 @@ redirect_from: "/page1"
 		<div class="spacer">&nbsp;</div>	
 	</div>
 	{% endif %}
+	{% if forloop.index == 8 %}
+	<div class="article col-lg-4 col-md-6 col-sm-6">
+		<div class="title">
+			<h2>Advertisement</h2>
+		</div>
+		<div class="advert image">
+			
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-8229111309021610"
+			     data-ad-slot="1446574905"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<div class="spacer">&nbsp;</div>	
+	</div>
+	{% endif %}
 	{% endfor %}
 </div>
 {% if paginator.total_pages > 1 %}
