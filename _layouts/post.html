@@ -88,6 +88,7 @@
 			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5371f8192678d3ff"></script>
 			<br>
 				<div class="sources">
+					{% if page.indepth_1 %}
 					<strong>In-depth reading</strong><br>
 					<ul>
 						{% if page.indepth_1.title %}
@@ -106,6 +107,7 @@
 						<li><a href="{{ page.indepth_5.url }}" rel="prev" target="_blank">{{ page.indepth_5.title }}</a></li>
 						{% endif%}
 					</ul>
+					{% endif%}
 					<strong>Other articles on Trivial Discourse</strong><br>
 					<ul>
 						{% if page.previous.title %}
