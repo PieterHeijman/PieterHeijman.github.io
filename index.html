@@ -16,7 +16,11 @@ redirect_from: "/page1"
 				<img class="img-responsive" src="{{ post.image_url_small }}" title="{{ post.image_credits }}">
 			</div>
 			<div>
+				{% if post.subtitle %}
+				<p>{{ post.subtitle }}</p>
+				{% else %}
 				<p>{{ post.description }}</p>
+				{% endif %}
 			</div>
 		</a>
 		<a class="readmore" href="{{ post.url }}">Continue reading</a>
