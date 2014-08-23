@@ -58,13 +58,15 @@ p.lead {font-family: 'Noto Serif', serif; line-height: 145%; font-style: italic;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 15px;
 	font-family: 'Noto Serif', serif;
 }
 .article p {font-size: 16px; height: 150px;}
 .article h2 {font-size: 24px;}
 .article .title {height: 60px; border-bottom: 1px solid #000000; margin-bottom: 15px;}
+.article .advert.title {height: 48px; margin-bottom: 0px; border-bottom: 0px solid #000000;}
 .article .image {height: 225px; overflow: hidden; margin-bottom: 5px;}
-.article .advert.image {height: 385px; overflow: hidden; margin-bottom: 5px;}
+.article .advert.image {height: 280px; overflow: hidden; margin-bottom: 5px;}
 .article.advert .title {border-bottom: 0px;}
 .article.advert {padding-top: 19px;}
 .spacer {height: 30px; border-top: 1px solid #000000;}

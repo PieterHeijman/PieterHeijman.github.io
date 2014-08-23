@@ -11,23 +11,19 @@ redirect_from: "/page1"
 		<a rel="next" href="{{ post.url }}">
 			<div class="title">
 				<h2>{{ post.title }}</h2>
+				{% if post.subtitle %}
+				<p>{{ post.subtitle }}</p>
+				{% endif %}
 			</div>
 			<div class="image">
 				<img class="img-responsive" src="{{ post.image_url_small }}" title="{{ post.image_credits }}">
 			</div>
-			<div>
-				{% if post.subtitle %}
-				<p>{{ post.subtitle }}</p>
-				{% else %}
-				<p>{{ post.description }}</p>
-				{% endif %}
-			</div>
 		</a>
-		<a class="readmore" href="{{ post.url }}">Continue reading</a>
+		<a class="readmore" href="{{ post.url }}">Read This Article</a>
 	</div>
 	{% if forloop.index == 5 %}
 	<div class="article col-lg-4 col-md-6 col-sm-6">
-		<div class="title">
+		<div class="advert title">
 			<h2>Advertisement</h2>
 		</div>
 		<div class="advert image">
@@ -41,12 +37,11 @@ redirect_from: "/page1"
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		</div>
-		<div class="spacer">&nbsp;</div>	
 	</div>
 	{% endif %}
 	{% if forloop.index == 8 %}
 	<div class="article col-lg-4 col-md-6 col-sm-6">
-		<div class="title">
+		<div class="advert title">
 			<h2>Advertisement</h2>
 		</div>
 		<div class="advert image">
@@ -58,9 +53,8 @@ redirect_from: "/page1"
 			     data-ad-format="auto"></ins>
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
-		<div class="spacer">&nbsp;</div>	
+			</script>	
+		</div>	
 	</div>
 	{% endif %}
 	{% endfor %}
