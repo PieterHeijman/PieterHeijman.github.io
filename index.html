@@ -1,7 +1,7 @@
 ---
 layout: td-page
 title: Welcome to Trivial Discourse
-description: "Taking a good hard look at life's trivial parts."
+description: "Taking a good hard look at life's trivial parts. Exploring trivial knowledge of many topics, including science, history and mathematics."
 redirect_from: "/page1"
 ---
 
@@ -16,7 +16,7 @@ redirect_from: "/page1"
 				{% endif %}
 			</div>
 			<div class="image">
-				<img class="img-responsive" src="{{ post.image_url_small }}" title="{{ post.image_credits }}">
+				<img class="img-responsive" src="{{ post.image_url_small }}" alt="{{ post.title }} - {{ post.subtitle }}" title="{{ post.image_credits }}">
 			</div>
 		</a>
 		<a class="readmore" href="{{ post.url }}">Read This Article</a>
