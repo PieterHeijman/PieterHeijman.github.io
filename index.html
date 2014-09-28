@@ -5,9 +5,15 @@ description: "Taking a good hard look at life's trivial parts. Exploring trivial
 redirect_from: "/page1"
 ---
 
+<div class="container post">
+	<h1 class="title">Welcome to Trivial Discourse</h1>
+	<p>
+	About all the stuff you could have learned in school but didn&rsquo;t
+	</p>
+</div>
 <div class="row index">
 	{% for post in paginator.posts %}
-	<div class="article col-lg-4 col-md-6 col-sm-6">
+	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<a rel="next" href="{{ post.url }}">
 			<div class="title">
 				<h2>{{ post.title }}</h2>
@@ -22,7 +28,7 @@ redirect_from: "/page1"
 		<a class="readmore" href="{{ post.url }}">Read This Article</a>
 	</div>
 	{% if forloop.index == 5 %}
-	<div class="article col-lg-4 col-md-6 col-sm-6">
+	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<div class="advert title">
 			<h2>Advertisement</h2>
 		</div>
@@ -40,7 +46,7 @@ redirect_from: "/page1"
 	</div>
 	{% endif %}
 	{% if forloop.index == 8 %}
-	<div class="article col-lg-4 col-md-6 col-sm-6">
+	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<div class="advert title">
 			<h2>Advertisement</h2>
 		</div>
