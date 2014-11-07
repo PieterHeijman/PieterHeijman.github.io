@@ -1,25 +1,23 @@
 ---
-layout: td-page
+layout: page15
 title: Welcome to Trivial Discourse
 description: "Taking a good hard look at life's trivial parts. Exploring trivial knowledge of many topics, including science, history and mathematics."
 redirect_from: "/page1"
 ---
 
-<div class="container post">
-	<h1 class="title">Welcome to Trivial Discourse</h1>
-	<p>
+
+<h1 class="hometitle">Welcome to Trivial Discourse</h1>
+<p>
 	About all the stuff you could have learned in school but didn&rsquo;t
-	</p>
-</div>
+</p>
+
 <div class="row index">
 	{% for post in paginator.posts %}
 	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<a rel="next" href="{{ post.url }}">
 			<div class="title">
 				<h2>{{ post.title }}</h2>
-				{% if post.subtitle %}
-				<p>{{ post.subtitle }}</p>
-				{% endif %}
+				<p>{{ post.subtitle }}&nbsp;</p>
 			</div>
 			<div class="image">
 				<img class="img-responsive" src="{{ post.image_url_small }}" alt="{{ post.title }} - {{ post.subtitle }}" title="{{ post.image_credits }}">
@@ -31,6 +29,7 @@ redirect_from: "/page1"
 	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<div class="advert title">
 			<h2>Advertisement</h2>
+			<p>&nbsp;</p>
 		</div>
 		<div class="advert image">
 			
@@ -49,6 +48,7 @@ redirect_from: "/page1"
 	<div class="article col-lg-6 col-md-6 col-sm-6">
 		<div class="advert title">
 			<h2>Advertisement</h2>
+			<p>&nbsp;</p>
 		</div>
 		<div class="advert image">
 			
