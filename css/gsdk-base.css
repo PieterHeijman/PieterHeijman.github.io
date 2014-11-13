@@ -1169,7 +1169,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 	font-family: 'Petit Formal Script', cursive;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    top: 65px;
+    top: 25px;
     z-index: 3;
 	width: 100%;
 }
