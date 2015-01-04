@@ -11,9 +11,9 @@
 			{% unless post.published == false %}
 		<item>
 			<title><![CDATA[{{ post.title }}]]></title>
-			<pubDate>{{ post.date }}</pubDate>
+			<pubDate>{{ post.publdate }}</pubDate>
 			<guid>http://www.trivialdiscourse.com{{ post.url }}</guid>
-			<description>&lt;img src="{{ image_url_small }}" title="Image by {{ image_credits }}" &gt;&lt;br&gt;{{ post.description }}</description>
+			<description>&lt;img src="{{ post.image_url_small }}" title="Image by {{ post.image_credits }}" &gt;&lt;br&gt;{{ post.description }}</description>
 			<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pieter Heijman</dc:creator>
 			<link>http://www.trivialdiscourse.com{{ post.url }}</link>  
 		</item>
