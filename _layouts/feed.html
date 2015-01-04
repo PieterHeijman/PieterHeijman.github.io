@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/">
 	<channel>
 		<title>Trivial Discourse</title>
 		<description>A site with useful factoids, if you consider useless factoids useful.</description>
@@ -12,7 +12,8 @@
 			<guid>{{ post.guid }}</guid>
 			<pubDate>{{ post.pubdate }}</pubDate>
 			<description><![CDATA[{{ post.description }}]]></description>
-			<link>http://www.trivialdiscourse.com{{ post.url }}</link>
+			<link>http://www.trivialdiscourse.com{{ post.url }}</link>			
+			<media:thumbnail url='{{ image_url_small }}' height='240' width='360' />   
 		</item>
 			{% endunless %}
 		{% endfor %}
