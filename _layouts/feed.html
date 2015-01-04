@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 	<channel>
 		<title>Trivial Discourse</title>
 		<description>A site with useful factoids, if you consider useless factoids useful.</description>
 		<link>http://www.trivialdiscourse.com/</link>
-		
+		<atom:link href="http://feeds.feedburner.com/TrivialDiscourse" rel="self"></atom:link>
+		<language>en-us</language>
+
 		{% for post in site.posts %}
 			{% unless post.published == false %}
 		<item>
 			<title><![CDATA[{{ post.title }}]]></title>
-			<guid>http://www.trivialdiscourse.com{{ post.url }}</guid>
 			<pubDate>{{ post.date }}</pubDate>
-			<description><![CDATA[{{ post.description }}]]></description>
-			<link>http://www.trivialdiscourse.com{{ post.url }}</link>			
-			<media:thumbnail url='{{ image_url_small }}' height='240' width='360' />   
+			<guid>http://www.trivialdiscourse.com{{ post.url }}</guid>
+			<description>&lt;img src="{{ image_url_small }}" title="Image by {{ image_credits }}" &gt;&lt;br&gt;{{ post.description }}</description>
+			<dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Pieter Heijman</dc:creator>
+			<link>http://www.trivialdiscourse.com{{ post.url }}</link>  
 		</item>
 			{% endunless %}
 		{% endfor %}
