@@ -8,10 +8,10 @@
 		{% for post in site.posts %}
 			{% unless post.published == false %}
 		<item>
-			<title>{{ post.title }}</title>
+			<title><![CDATA[{{ post.title }}]]></title>
 			<guid>{{ post.guid }}</guid>
 			<pubDate>{{ post.pubdate }}</pubDate>
-			<description>{{ post.description }}</description>
+			<description><![CDATA[{{ post.description }}]]></description>
 			<link>http://www.trivialdiscourse.com{{ post.url }}</link>
 		</item>
 			{% endunless %}
