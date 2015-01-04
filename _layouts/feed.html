@@ -9,8 +9,8 @@
 			{% unless post.published == false %}
 		<item>
 			<title><![CDATA[{{ post.title }}]]></title>
-			<guid>{{ post.guid }}</guid>
-			<pubDate>{{ post.pubdate }}</pubDate>
+			<guid>http://www.trivialdiscourse.com{{ post.url }}</guid>
+			<pubDate>{{ post.date }}</pubDate>
 			<description><![CDATA[{{ post.description }}]]></description>
 			<link>http://www.trivialdiscourse.com{{ post.url }}</link>			
 			<media:thumbnail url='{{ image_url_small }}' height='240' width='360' />   
