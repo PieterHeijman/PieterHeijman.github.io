@@ -61,7 +61,7 @@ img.right {
   text-decoration: none; }
 
 .linkprev .title p, .linknext .title p, .index .title p {
-  font-size: 16px; }
+  font-size: 15px; }
 
 .linkprev h2, .linknext h2, .index .title h2 {
   font-size: 16px; }
@@ -127,6 +127,10 @@ aside.left {
   margin-top: 15px;
   margin-right: 15px;
   margin-bottom: 15px; }
+.article .advert.title {height: 50px; margin-bottom: 0px; border-bottom: 0px solid #000000;}
+.article .advert.image {height: 280px; overflow: hidden; margin-bottom: 5px;}
+.article.advert .title {border-bottom: 0px;}
+.article.advert {padding-top: 19px;}
 
 .sharing  .share {width: 50px; height: 50px; display: inline-block; margin-right: 5px;}
 .sharing .twitter {background: url(twitter.png) #55ACEE center center no-repeat;}
