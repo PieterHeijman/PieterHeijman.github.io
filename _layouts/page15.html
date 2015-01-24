@@ -30,6 +30,14 @@
 						<img src="/css/rss.png" class="right">
 					</a>
 				</div>
+				<div class="container">
+					<div class="text-center">
+						<h1 class="title">
+							{{ page.title }}<br>
+							<small>{{ page.subtitle }}</small>
+						</h1>
+					</div>
+				</div>
 			</div>			
 			<div class="img-src" style="background-image: url('/img/book.jpg')"></div>
 		</div>
@@ -86,10 +94,10 @@
 		$(window).scroll(function() {
 			var scrolltop = $(window).scrollTop();
 			
-			if(scrolltop > prevScroll && scrolltop > 300) {
-				$(".motto").css("top",325 + "px");
+			if(scrolltop > prevScroll && scrolltop > 130) {
+				$(".motto").css("top",155 + "px");
 				$(".motto").removeClass("fixed").addClass("abs");
-			} else if ($(window).scrollTop() < prevScroll && $(window).scrollTop() <= 300) {
+			} else if ($(window).scrollTop() < prevScroll && $(window).scrollTop() <= 130) {
 				$(".motto").css("top",25 + "px");
 				$(".motto").removeClass("abs").addClass("fixed");			
 			}

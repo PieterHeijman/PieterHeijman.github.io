@@ -1703,6 +1703,13 @@ body, p {
 h1, h2, h3, h4, h5, h6, h1 small {
   font-family: "Libre Baskerville", serif; }
 
+.motto h1, .motto small {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
 .lead {
   font-size: 26px;
   line-height: 33.8px; }
