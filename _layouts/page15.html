@@ -91,19 +91,21 @@
 
 		</script>
 		<script>
-		var prevScroll = 0;
-		$(window).scroll(function() {
-			var scrolltop = $(window).scrollTop();
-			
-			if(scrolltop > prevScroll && scrolltop > 130) {
-				$(".motto").css("top",155 + "px");
-				$(".motto").removeClass("fixed").addClass("abs");
-			} else if ($(window).scrollTop() < prevScroll && $(window).scrollTop() <= 130) {
-				$(".motto").css("top",25 + "px");
-				$(".motto").removeClass("abs").addClass("fixed");			
-			}
-			prevScroll = $(window).scrollTop();
-		});
+		if (screen.width > 800) {
+			var prevScroll = 0;
+			$(window).scroll(function() {
+				var scrolltop = $(window).scrollTop();
+				
+				if(scrolltop > prevScroll && scrolltop > 130) {
+					$(".motto").css("top",155 + "px");
+					$(".motto").removeClass("fixed").addClass("abs");
+				} else if ($(window).scrollTop() < prevScroll && $(window).scrollTop() <= 130) {
+					$(".motto").css("top",25 + "px");
+					$(".motto").removeClass("abs").addClass("fixed");			
+				}
+				prevScroll = $(window).scrollTop();
+			});
+		}
 		</script>
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</body>
