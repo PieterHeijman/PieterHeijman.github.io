@@ -1,0 +1,36 @@
+.blurred-container {
+  height: 215px; }
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: left; }
+
+h1 small {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 15px; }
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left; }
+
+p {
+  line-height: 30px; }
+
+.sharing {
+  margin-left: -5px; }
+
+.sharing .fa {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none; }
+
+i.right {
+  float: right;
+  margin-left: 10px;
+  font-size: 30px; }
+
+/*# sourceMappingURL=style152.css.map */
