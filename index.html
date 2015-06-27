@@ -1,61 +1,59 @@
 ---
-layout: page15
+layout: page152
 title: Welcome to Trivial Discourse
-subtitle: "About all the stuff you could have learned in school but didn&rsquo;t"
 description: "Taking a good hard look at life's trivial parts. Exploring trivial knowledge of many topics, including science, history and mathematics."
 redirect_from: "/page1"
+color: "#27AE60"
 ---
 
 <div class="row index">
 	{% for post in paginator.posts %}
-	<div class="article col-lg-6 col-md-6 col-sm-6">
-		<a rel="next" href="{{ post.url }}">
-			<div class="title">
-				<h2>{{ post.title }}</h2>
-				<p>{{ post.subtitle }}&nbsp;</p>
-			</div>
-			<div class="image">
-				<img class="img-responsive" src="{{ post.image_url_small }}" alt="{{ post.title }} - {{ post.subtitle }}" title="{{ post.image_credits }}">
-			</div>
-		</a>
-		<a class="readmore" href="{{ post.url }}">Read This Article</a>
+	<div class="article col-lg-12 col-md-12 col-sm-12">
+		<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+		{% if post.subtitle %}
+		<h3>{{ post.subtitle }}</h3>
+		{% endif %}
+		<p>
+		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+		</p>
+		{% if forloop.index == 1 %}
+		<p>
+			<img src="{{ post.image_url_large }}" class="img-responsive"/>
+		</p>
+		{% endif %}
+		<a class="readmore" href="{{ post.url }}">Continue reading &ldquo;{{ post.title }}&rdquo;</a>
 	</div>
-	{% if forloop.index == 5 %}
-	<div class="article col-lg-6 col-md-6 col-sm-6">
+	{% if forloop.index == 1 %}
+	<div class="article col-lg-12 col-md-12 col-sm-12">
 		<div class="advert title">
 			<h2>Advertisement</h2>
 			<p>&nbsp;</p>
 		</div>
-		<div class="advert image">
-			
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-client="ca-pub-8229111309021610"
-			     data-ad-slot="1446574905"
-			     data-ad-format="auto"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-		</div>
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-8229111309021610"
+			 data-ad-slot="1446574905"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		
 	</div>
 	{% endif %}
-	{% if forloop.index == 8 %}
-	<div class="article col-lg-6 col-md-6 col-sm-6">
+	{% if forloop.index == 5 %}
+	<div class="article col-lg-12 col-md-12 col-sm-12">
 		<div class="advert title">
 			<h2>Advertisement</h2>
 			<p>&nbsp;</p>
 		</div>
-		<div class="advert image">
-			
-			<ins class="adsbygoogle"
-			     style="display:block"
-			     data-ad-client="ca-pub-8229111309021610"
-			     data-ad-slot="1446574905"
-			     data-ad-format="auto"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>	
-		</div>	
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-8229111309021610"
+		     data-ad-slot="1446574905"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>		
 	</div>
 	{% endif %}
 	{% endfor %}

@@ -12,8 +12,18 @@
 		<link href="/favicon.png" rel="shortcut icon"/>
 		<link href="http://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Allerta" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/css/includes.css" />
 		<link rel="stylesheet" href="/css/styling.css" />
+		<link rel="stylesheet" href="/css/style152.css" />
+		<style>
+			.sharing .fa:hover {
+				background-color: {{ page.color }};
+			}
+			a:hover {
+				color: {{ page.color }};
+			}
+		</style>
 		<meta property="og:title" content="Trivial Discourse - {{ page.title }}" />
 		<meta property="og:type" content="article" />
 		<meta property="og:url" content="http://www.trivialdiscourse.com{{ page.url }}" />
@@ -21,7 +31,7 @@
 	</head>
 	<body>
 		<div class="blurred-container header">
-			<div class="motto fixed">
+			<div class="motto abs">
 				<div class="container">
 					<a href="/">
 					<div class="logo">
@@ -30,29 +40,33 @@
 					Trivial Discourse
 					</a>
 					<a href="http://feeds.feedburner.com/TrivialDiscourse" title="RSS Feed" target="_blank">
-						<img src="/css/img/rss.png" alt="Follow this site in your favorite RSS feed reader" class="right">
+						<i class="fa fa-rss right"></i>
 					</a>
 				</div>
 				<div class="container">
 					<div class="text-center">
-						<h1 class="title">
-							{{ page.title }}<br>
-							<small>{{ page.subtitle }}</small>
-						</h1>
+						
 					</div>
 				</div>
 			</div>			
-			<div class="img-src" style="background-image: url('/img/book.jpg')"></div>
+			<div class="img-src" style="background-color: url('{{ page.color }}')"></div>
 		</div>
 		<div class="main">
 			<div class="container tim-container">
-				
 				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8">
+					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-8 col-sm-10">
+						<h1>{{ page.title }}</h1>
+						<p>{{ page.subtitle }}</p>
+					</div>
+					<div class="col-md-2 col-sm-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-8 col-sm-10">
 						{{ content }}
 					</div>
-					<div class="col-md-2"></div>
+					<div class="col-md-2 col-sm-1"></div>
 				</div>
 				<div class="extra-space"></div>
 			</div>
@@ -92,25 +106,7 @@
 		  ga('send', 'pageview');
 
 		</script>
-		<script>
-		if (window.innerWidth > 1200) {
-			var prevScroll = 0;
-			$(window).scroll(function() {
-				var scrolltop = $(window).scrollTop();
-				
-				if(scrolltop > prevScroll && scrolltop > 130) {
-					$(".motto").css("top",155 + "px");
-					$(".motto").removeClass("fixed").addClass("abs");
-				} else if ($(window).scrollTop() < prevScroll && $(window).scrollTop() <= 130) {
-					$(".motto").css("top",25 + "px");
-					$(".motto").removeClass("abs").addClass("fixed");			
-				}
-				prevScroll = $(window).scrollTop();
-			});
-		} else {
-			$(".motto").removeClass("fixed").addClass("abs");
-		}
-		</script>
+
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</body>
 </html>

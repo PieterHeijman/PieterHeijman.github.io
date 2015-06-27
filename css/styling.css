@@ -1,10 +1,14 @@
 body, p {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Crimson Text, Georgia, Times, serif;
   font-size: 20px;
   line-height: 26px; }
 
 h1, h2, h3, h4, h5, h6, h1 small {
-  font-family: Libre Baskerville, serif; }
+  font-family: Allerta, Helvetica, Arial, sans-serif;
+  text-align: left; }
+
+hr {
+  border: 1px solid #000; }
 
 .motto h1, .motto small {
   font-weight: bold;
@@ -19,8 +23,8 @@ h1, h2, h3, h4, h5, h6, h1 small {
   text-align: left !important; }
 
 .motto .container {
-  font-family: Source Sans Pro, sans-serif;
-  font-size: 20px;
+  font-family: Allerta, Helvetica, Arial, sans-serif;
+  font-size: 22px;
   line-height: 26px;
   color: #fff; }
 
@@ -32,7 +36,7 @@ a {
   color: #000; }
 
 .logo {
-  font-family: Source Sans Pro, sans-serif;
+  font-family: Allerta, Helvetica, Arial, sans-serif;
   font-size: 20px; }
 
 .main .container {
@@ -43,7 +47,7 @@ a {
   line-height: 1em; }
 
 aside {
-  font-family: Libre Baskerville, serif;
+  font-family: Allerta, Helvetica, Arial, sans-serif;
   font-size: 26px;
   line-height: 33.8px; }
 
@@ -74,7 +78,8 @@ a {
   color: #000; }
 
 a:hover {
-  color: #c94b0c; }
+  color: #c94b0c;
+  text-decoration: none; }
 
 .hometitle {
   text-align: left; }

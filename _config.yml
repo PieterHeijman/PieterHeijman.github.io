@@ -2,5 +2,6 @@ name: Your New Jekyll Site
 markdown: redcarpet
 highlighter: pygments
 paginate: 10
+excerpt_separator: <!--more-->
 gems:
   - jekyll-redirect-from

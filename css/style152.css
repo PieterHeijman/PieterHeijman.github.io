@@ -2,7 +2,7 @@
   height: 215px; }
 
 h1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
   text-align: left; }
 
@@ -19,6 +19,15 @@ h3 {
 
 p {
   line-height: 30px; }
+
+.readmore {
+  font-family: Allerta, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #000; }
 
 .sharing {
   margin-left: -5px; }
