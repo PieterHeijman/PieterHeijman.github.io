@@ -1,34 +1,21 @@
 ---
 layout: page152
+showTitle: 0
 title: Welcome to Trivial Discourse
 description: "Taking a good hard look at life's trivial parts. Exploring trivial knowledge of many topics, including science, history and mathematics."
 redirect_from: "/page1"
 color: "#27AE60"
 ---
-
+<div class="row">
+	<div class="fact col-lg-12 col-md-12 col-sm-12">
+		<strong>Fact: </strong>
+		<p>Though they are not very picky eaters, sharks <strong>do not</strong> eat humans. We just aren&lsquo;t that tasty.</p>
+	</div>
+</div>
 <div class="row index">
 	{% for post in paginator.posts %}
-	<div class="article col-lg-12 col-md-12 col-sm-12">
-		<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
-		{% if post.subtitle %}
-		<h3>{{ post.subtitle }}</h3>
-		{% endif %}
-		<p>
-		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-		</p>
-		{% if forloop.index == 1 %}
-		<p>
-			<img src="{{ post.image_url_large }}" class="img-responsive"/>
-		</p>
-		{% endif %}
-		<a class="readmore" href="{{ post.url }}">Continue reading &ldquo;{{ post.title }}&rdquo;</a>
-	</div>
 	{% if forloop.index == 1 %}
-	<div class="article col-lg-12 col-md-12 col-sm-12">
-		<div class="advert title">
-			<h2>Advertisement</h2>
-			<p>&nbsp;</p>
-		</div>
+	<div class="ad col-lg-12 col-md-12 col-sm-12">
 		<ins class="adsbygoogle"
 			 style="display:block"
 			 data-ad-client="ca-pub-8229111309021610"
@@ -37,15 +24,38 @@ color: "#27AE60"
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
-		
+	</div>
+	{% endif %}
+	{% if forloop.index == 1 %}
+	<div class="article col-lg-12 col-md-12 col-sm-12">
+		<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+		{% if post.subtitle %}
+		<h3>{{ post.subtitle }}</h3>
+		{% endif %}
+		<p>
+		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+		</p>
+		<p>
+			<img src="{{ post.image_url_large }}" class="img-responsive"/>
+		</p>
+		<a class="readmore" href="{{ post.url }}">Continue reading &ldquo;{{ post.title }}&rdquo;</a>
+		<hr>
+	</div>
+	{% else %}
+	<div class="article col-lg-6 col-md-6 col-sm-6">
+		<a href="{{ post.url }}">
+		<p>
+			<img src="{{ post.image_url_small }}" class="img-responsive"/>
+		</p>
+		<h2>{{ post.title }}</h2>
+		{% if post.subtitle %}
+		<p>{{ post.subtitle }}</p>
+		{% endif %}
+		</a>
 	</div>
 	{% endif %}
 	{% if forloop.index == 5 %}
-	<div class="article col-lg-12 col-md-12 col-sm-12">
-		<div class="advert title">
-			<h2>Advertisement</h2>
-			<p>&nbsp;</p>
-		</div>
+	<div class="ad col-lg-12 col-md-12 col-sm-12">
 		<ins class="adsbygoogle"
 		     style="display:block"
 		     data-ad-client="ca-pub-8229111309021610"
