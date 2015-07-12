@@ -15,11 +15,12 @@
 		<link rel="stylesheet" href="/css/includes.css" />
 		<link rel="stylesheet" href="/css/styling.css" />
 		<link rel="stylesheet" href="/css/style152.css" />
+		<link rel="stylesheet" href="/css/home.css" />
 		<style>
-			.sharing .fa:hover {
+			.sharing .fa:hover, .home .more, .pagination .global {
 				background-color: {{ page.color }};
 			}
-			a:hover {
+			a:hover, .fact strong, .fact p {
 				color: {{ page.color }};
 			}
 		</style>
@@ -50,26 +51,74 @@
 			</div>			
 			<div class="img-src" style="background-color: url('{{ page.color }}')"></div>
 		</div>
-		<div class="main">
-			<div class="container tim-container">
+		<div class="main home">
+			<div class="container">
+				{% for post in paginator.posts %}
 				<div class="row">
-					<div class="col-md-2 col-sm-1"></div>
-					<div class="col-md-8 col-sm-10">
-						{% if page.showTitle != 0 %}
-						<h1>{{ page.title }}</h1>
-						<p>{{ page.subtitle }}</p>
-						{% endif %}
+					<div class="col-md-6 image">
+						<img src="{{ post.image_url_large }}" class="img-responsive">
 					</div>
-					<div class="col-md-2 col-sm-1"></div>
+					<div class="col-md-6 textual item{{ forloop.index }}">
+						<h1>{{ post.title }}</h1>
+						<h2>{{ post.subtitle }}</h2>
+						<p>
+							{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+						</p>
+						<div class="more"><a href="{{ post.url }}">More&nbsp;<i class="fa fa-arrow-right"></i></a></div>
+					</div>
 				</div>
+				{% if forloop.index == 1 %}
 				<div class="row">
-					<div class="col-md-2 col-sm-1"></div>
-					<div class="col-md-8 col-sm-10">
-						{{ content }}
+					<div class="col-md-12 fact">
+						<p><strong>Fact: </strong>Though they are not very picky eaters, sharks <strong>do not</strong> eat humans. We just aren&lsquo;t that tasty.</p>
 					</div>
-					<div class="col-md-2 col-sm-1"></div>
 				</div>
-				<div class="extra-space"></div>
+				{% endif %}
+				{% if forloop.index == 3 or forloop.index == 5 %}
+				<div class="row">
+					<div class="col-md-12">
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-8229111309021610"
+							 data-ad-slot="1446574905"
+							 data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</div>
+				</div>
+				{% endif %}
+				
+				{% endfor %}
+				{% if paginator.total_pages > 1 %}
+				<div class="row pagination">
+				  <div class="col-xs-2">
+				  {% if paginator.previous_page %}
+				    <a class="global left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-arrow-left"></i></a>
+				  {% else %}
+				    <span class="global left"><i class="fa fa-arrow-left"></i></span>
+				  {% endif %}
+				  </div>
+				  <div class="numbers col-xs-8">
+				  {% for page in (1..paginator.total_pages) %}
+				    {% if page == paginator.page %}
+				      <em>{{ page }}</em>
+				    {% elsif page == 1 %}
+				      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				    {% else %}
+				      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				    {% endif %}
+				  {% endfor %}
+				  </div>
+				  <div class="col-xs-2">
+				  {% if paginator.next_page %}
+				    <a class="global right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-arrow-right"></i></a>
+				  {% else %}
+				    <span class="global right"><i class="fa fa-arrow-right"></i></span>
+				  {% endif %}
+				  </div>
+				</div>
+				{% endif %}
 			</div>
 		</div>
 		
@@ -110,4 +159,4 @@
 
 		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	</body>
-</html>
+</html> 	
