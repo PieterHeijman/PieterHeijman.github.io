@@ -3,7 +3,7 @@ $secondary-font : Raleway, Helvetica, Arial, sans-serif
 $font-xlarge: 32px
 $font-large: 26px
 $font-medium: 24px
-$font-normal: 19px
+$font-normal: 21px
 
 .blurred-container 
   height: 215px
@@ -20,8 +20,15 @@ h1
 h1.title
   font-size: $font-xlarge
 
-h1.title small
+small.title
   font-size: $font-normal
+  font-family: $primary-font
+
+h2.title
+  font-size: $font-medium
+  font-family: $primary-font
+  font-weight: 700
+  margin-top: 0px
   
 .lead
   font-size: $font-medium
@@ -33,9 +40,12 @@ h3
   text-align: left
   
 p
-  line-height: 30px
+  line-height: 32px
   font-size: $font-normal
   font-family: $secondary-font
+  
+.content p a 
+  text-decoration: underline
   
 .footer
   font-size: $font-normal
@@ -53,6 +63,7 @@ p
   
 .sharing
   margin-left: -5px
+  margin-top: 10px
   
 .sharing .fa 
   box-shadow: none

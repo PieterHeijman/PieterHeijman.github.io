@@ -13,8 +13,15 @@ h1 {
 h1.title {
   font-size: 32px; }
 
-h1.title small {
-  font-size: 19px; }
+small.title {
+  font-size: 21px;
+  font-family: Raleway, Helvetica, Arial, sans-serif; }
+
+h2.title {
+  font-size: 24px;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin-top: 0px; }
 
 .lead {
   font-size: 24px; }
@@ -26,12 +33,15 @@ h3 {
   text-align: left; }
 
 p {
-  line-height: 30px;
-  font-size: 19px;
+  line-height: 32px;
+  font-size: 21px;
   font-family: Raleway, Helvetica, Arial, sans-serif; }
 
+.content p a {
+  text-decoration: underline; }
+
 .footer {
-  font-size: 19px;
+  font-size: 21px;
   font-family: Raleway, Helvetica, Arial, sans-serif; }
 
 .readmore {
@@ -45,7 +55,8 @@ p {
   min-height: 52px; }
 
 .sharing {
-  margin-left: -5px; }
+  margin-left: -5px;
+  margin-top: 10px; }
 
 .sharing .fa {
   box-shadow: none;
@@ -110,7 +121,7 @@ i.right {
   font-size: 24px; }
 
 .home .textual h3 {
-  font-size: 19px; }
+  font-size: 21px; }
 
 .home .textual p {
   padding-right: 30px;
