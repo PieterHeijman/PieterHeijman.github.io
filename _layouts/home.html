@@ -30,7 +30,7 @@
 		<meta property="og:image" content="{{ page.image_url_small }}" />
 	</head>
 	<body>
-		<div class="blurred-container header" style="background-color: url('{{ page.color }}')">
+		<div class="blurred-container header" style="background-color: {{ page.color }}">
 			<div class="motto abs">
 				<div class="container">
 					<a href="/">
@@ -49,7 +49,7 @@
 					</div>
 				</div>
 			</div>			
-			<div class="img-src" style="background-color: url('{{ page.color }}')"></div>
+			<div class="img-src" style="background-color: {{ page.color }}"></div>
 		</div>
 		<div class="main home">
 			<div class="container">
