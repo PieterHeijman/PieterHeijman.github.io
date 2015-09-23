@@ -1,3 +1,6 @@
+body {
+  padding-top: 75px; }
+
 body, p {
   font-family: Raleway, Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -10,7 +13,7 @@ h1, h2, h3, h4, h5, h6, h1 small {
 hr {
   border: 1px solid #000; }
 
-.motto h1, .motto small {
+.header h1, .header small {
   font-weight: bold;
   color: #fff;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
@@ -19,18 +22,19 @@ hr {
   font-size: 26px;
   line-height: 33.8px; }
 
-.motto {
+.header {
   text-align: left !important; }
 
-.motto .container {
+.header .container {
   font-family: Raleway, Helvetica, Arial, sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #fff; }
 
-.motto .container a, .motto .container a:hover {
+.header .container a, .header .container a:hover {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 232px; }
 
 a {
   color: #000; }
@@ -85,7 +89,7 @@ a:hover {
   text-align: left; }
 
 body, .main {
-  background-color: #ccc; }
+  background-color: #fff; }
 
 .fixed {
   position: fixed !important; }
@@ -93,10 +97,7 @@ body, .main {
 .abs {
   position: absolute; }
 
-.motto {
-  top: 20px; }
-
-.motto .container {
+.header .container {
   padding-left: 0px;
   padding-right: 0px; }
 
@@ -112,8 +113,7 @@ body, .main {
   padding-top: 25px;
   margin-bottom: 30px;
   background-color: #fff;
-  position: relative;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
+  position: relative; }
 
 .lead::first-letter {
   margin-top: 0px;
@@ -281,10 +281,10 @@ i.right {
 .ad {
   margin-bottom: 25px; }
 
-.motto .container a, .motto .container a:hover {
+.header .container a, .header .container a:hover {
   line-height: 65px; }
 
-.blurred-container .motto {
+.blurred-container .header {
   top: 10px; }
 
 .logo {
