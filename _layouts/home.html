@@ -57,7 +57,19 @@
 						</a>
 					</div>
 				</div>
-				{% if forloop.index == 1 %}
+				{% if paginator.page == 1 && forloop.index == 1 %}
+				<div class="row">
+					<div class="col-md-12 fact">
+						<p>
+							<a href="https://twitter.com/intent/tweet?text=Turritopsis+nutricula+is+a+species+of+jellyfish+that+can+rejuvinate+its+cells,+rendering+it+biologically+immortal.+www.trivialdiscourse.com" target="_blank">
+							<strong>Fact: </strong>Turritopsis nutricula is a species of jellyfish that can rejuvinate its cells, rendering it biologically immortal.
+							<i class="fa fa-twitter"></i></a>
+						</p>
+					</div>
+				</div>
+				{% endif %}
+				
+				{% if paginator.page >= 2 && forloop.index == 1 %}
 				<div class="row">
 					<div class="col-md-12 fact">
 						<p>

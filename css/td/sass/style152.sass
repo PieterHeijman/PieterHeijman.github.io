@@ -1,9 +1,9 @@
 $primary-font:  Raleway, Helvetica, Arial, sans-serif
-$secondary-font : Raleway, Helvetica, Arial, sans-serif 
-$font-xlarge: 32px
+$secondary-font : 'Playfair Display', serif 
+$font-xlarge: 34px
 $font-large: 26px
 $font-medium: 24px
-$font-normal: 22px
+$font-normal: 18px
 
 $white : #fff
 $black : #000
@@ -29,14 +29,14 @@ hr
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
 
 .lead 
-  font-size: 26px
+  font-size: $font-normal
   line-height: 33.8px 
 
 .header 
   text-align: left !important 
 
 .header .container 
-  font-family: $secondary-font
+  font-family: $primary-font
   font-size: 22px
   line-height: 26px
   color: $white 
@@ -50,18 +50,18 @@ a
   color: $black 
 
 .logo 
-  font-family: $secondary-font
+  font-family: $primary-font
   font-size: 20px 
 
 .main .container 
   text-align: justify 
 
 .lead::first-letter 
-  font-size: 250%
-  line-height: 1em 
+  font-size: 230%
+  line-height: 1.38em 
 
 aside 
-  font-family: $secondary-font
+  font-family: $primary-font
   font-size: 26px
   line-height: 33.8px 
 
@@ -208,12 +208,12 @@ aside.left
   height: 215px
 
 h1, h2, h3, h4, h5, h6, h1 small
-  font-family: $primary-font
+  font-family: $secondary-font
 
 h1
-  font-size: $font-large
-  font-family: $primary-font
-  font-weight: 700
+  font-size: $font-xlarge
+  font-family: $secondary-font
+  font-weight: normal
   text-align: left
 
 h1.title
@@ -224,13 +224,10 @@ small.title
   font-family: $primary-font
 
 h2.title
-  font-size: $font-medium
-  font-family: $primary-font
-  font-weight: 700
+  font-size: $font-large
+  font-family: $secondary-font
+  font-weight: normal
   margin-top: 0px
-  
-.lead
-  font-size: $font-medium
 
 h3
   font-size: $font-medium
@@ -241,17 +238,17 @@ h3
 p
   line-height: 32px
   font-size: $font-normal
-  font-family: $secondary-font
+  font-family: $primary-font
   
 .content p a 
   text-decoration: underline
   
 .footer
   font-size: $font-normal
-  font-family: $secondary-font
+  font-family: $primary-font
   
 .readmore
-  font-family: $secondary-font
+  font-family: $primary-font
   font-size: $font-medium
   text-align: left
   padding-top: 10px
@@ -358,7 +355,7 @@ i.right
 
 .fact strong, .fact p
   font-size: $font-medium
-  font-family: $secondary-font
+  font-family: $primary-font
   line-height: 30px
   
 .home .more a, .home .more a:hover, .home .more a:active 
