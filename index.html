@@ -1,8 +1,26 @@
 ---
-layout: home
-showTitle: 0
-title: Welcome to Trivial Discourse
-description: "Taking a good hard look at life's trivial parts. Exploring trivial knowledge of many topics, including science, history and mathematics."
-redirect_from: "/page1"
-color: "#333136"
+layout: default
 ---
+
+<div class="home">
+
+  <div class="container">
+  {% for post in site.posts %}
+  <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" src="{{ post.image_url_small }}" alt="{{ post.title }} - {{ post.subtitle }}" title="{{ post.image_credits }}">
+        </div>
+        <div class="col-md-8">
+            <a rel="prev" href="{{ post.url }}">
+            <h3>{{ post.title }}</h3>
+            {% if post.subtitle %}
+            <p>{{ post.subtitle }}</p>
+            {% endif %}
+            </a>
+        </div>
+  </div>
+  <div class="space"></div>
+  {% endfor %}
+  </div>
+
+</div>
