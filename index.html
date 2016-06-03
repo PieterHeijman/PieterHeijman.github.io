@@ -5,22 +5,29 @@ layout: default
 <div class="home">
 
   <div class="container">
-  {% for post in site.posts %}
   <div class="row">
-        <div class="col-md-4">
-            <img class="img-responsive" src="{{ post.image_url_small }}" alt="{{ post.title }} - {{ post.subtitle }}" title="{{ post.image_credits }}">
-        </div>
-        <div class="col-md-8">
-            <a rel="prev" href="{{ post.url }}">
-            <h3>{{ post.title }}</h3>
-            {% if post.subtitle %}
-            <p>{{ post.subtitle }}</p>
+        <div class="col-md-12">
+            <article>
+            {% for post in site.posts %}
+                <p>
+                    <div class="cat {{ post.category }}"></div>
+                    <a rel="prev" href="{{ post.url }}">
+                    <h1 class="title">{{ post.title }}</h1>
+                    {% if post.subtitle %}
+                    <h2 class="title">{{ post.subtitle }}</h2>
+                    {% else %}
+                    <p>&nbsp;</p>
+                    {% endif %}
+                    </a>
+                </p>
+            {% if post.quote %}
+                <aside class="right hidden-xs">{{ post.quote }}</aside>
             {% endif %}
-            </a>
+            {% endfor %}
+            </article>
         </div>
   </div>
   <div class="space"></div>
-  {% endfor %}
   </div>
 
 </div>

@@ -342,7 +342,6 @@ i.right {
 .home .container .row {
   margin-left: 0px;
   margin-right: 0px;
-  overflow: hidden;
 }
 
 .home .textual {
@@ -462,6 +461,7 @@ i.right {
   float: none;
   line-height: 45px;   
 }
+
 .navbar-header {
   float: none;
 }
@@ -477,6 +477,10 @@ i.right {
   background-color: transparent;
 }
 
+.navbar-collapse {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 .navbar-collapse.collapse {
   display: none!important;
 }
@@ -486,9 +490,38 @@ i.right {
 .navbar-nav {
   float: none!important;
 }
-
+.navbar-nav a {
+  font-size: 18px;
+}
 @media all and (min-width:1500px) {
   .container {
     width: 1470px;
   }
+}
+
+.cat {
+  width: 15px;
+  height: 80px;
+  float: left;
+  margin-right: 10px;
+}
+
+.cat.legend {
+  background-color: #756b30;
+}
+
+.cat.world {
+  background-color: #115363;
+}
+
+.cat.nature {
+  background-color: #7ea228;
+}
+
+.cat.science {
+  background-color: #9d3011;
+}
+
+.cat.entertainment {
+  background-color: #5c4454;
 }
