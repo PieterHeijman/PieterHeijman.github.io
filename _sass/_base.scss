@@ -493,6 +493,9 @@ i.right {
 .navbar-nav a {
   font-size: 18px;
 }
+.navbar-nav li {
+  line-height: 0px;
+}
 @media all and (min-width:1500px) {
   .container {
     width: 1470px;

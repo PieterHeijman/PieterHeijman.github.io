@@ -14,19 +14,39 @@
     </div>
 
     {% include footer.html %}
-    <script src="/js/jquery-2.2.0.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <noscript id="deferred-styles">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    </noscript>
+    <script>
+        var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+        };
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+        else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
     <script>
       var hasOpened = false;
-      $(document).ready(function () {
-		  $(".navbar-toggle").on("click", function () {
-                    if (hasOpened) {
-                      $(this).toggleClass("inactive");
-                    }
-				    $(this).toggleClass("active");
-                    hasOpened = true;
-		  });
-	  });
+      document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("navbar-toggle").onclick = () => {
+          if (hasOpened) {
+            document.querySelector('.navbar-toggle').classList.toggle("inactive");
+          }
+          document.querySelector('.navbar-toggle').classList.toggle("active");
+          document.querySelector('.navbar-collapse').classList.toggle("in");
+          hasOpened = true;
+        };
+      });
+      
     </script>
   </body>
 
