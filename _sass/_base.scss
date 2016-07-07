@@ -138,7 +138,7 @@ a {
 }
 
 a:hover {
-  color: #c94b0c;
+  color: #494949;
   text-decoration: none;
 }
 
@@ -490,18 +490,43 @@ i.right {
   background-color: #756b30;
 }
 
+.cat.legend + a:hover {
+  color: #756b30;
+  text-decoration: none;
+}
+
 .cat.world {
   background-color: #115363;
+}
+
+.cat.world + a:hover {
+  color: #115363;
+  text-decoration: none;
 }
 
 .cat.nature {
   background-color: #7ea228;
 }
 
+.cat.nature + a:hover {
+  color: #7ea228;
+  text-decoration: none;
+}
+
 .cat.science {
   background-color: #9d3011;
 }
 
+.cat.science + a:hover {
+  color: #9d3011;
+  text-decoration: none;
+}
+
 .cat.entertainment {
   background-color: #5c4454;
+}
+
+.cat.entertainment + a:hover {
+  color: #5c4454;
+  text-decoration: none;
 }

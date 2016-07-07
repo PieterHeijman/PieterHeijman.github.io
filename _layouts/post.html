@@ -61,35 +61,36 @@ layout: default
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
+            <article>
             {% if page.previous.title %}
-                <div class="col-md-4">
-                    <img class="img-responsive" src="{{ page.previous.image_url_small }}" alt="{{ page.previous.title }} - {{ page.previous.subtitle }}" title="{{ page.previous.image_credits }}">
-                </div>
-                <div class="col-md-8">
+                <p>
+                    <div class="cat {{ page.previous.category }}"></div>
                     <a rel="prev" href="{{ page.previous.url }}">
-                    <h3>{{ page.previous.title }}</h3>
+                    <h1 class="title">{{ page.previous.title }}</h1>
                     {% if page.previous.subtitle %}
-                    <p>{{ page.previous.subtitle }}</p>
+                    <h2 class="title">{{ page.previous.subtitle }}</h2>
+                    {% else %}
+                    <p>&nbsp;</p>
                     {% endif %}
                     </a>
-                </div>
+                </p>
             {% endif %}
-        </div>  
-        <div class="space"></div>
-        <div class="row">
             {% if page.next.title %}
-                <div class="col-md-4">
-                    <img class="img-responsive" src="{{ page.next.image_url_small }}" alt="{{ page.next.title }} - {{ page.next.subtitle }}" title="{{ page.next.image_credits }}">
-                </div>
-                <div class="col-md-8">
+                <p>
+                    <div class="cat {{ page.next.category }}"></div>
                     <a rel="next" href="{{ page.next.url }}">
-                    <h3>{{ page.next.title }}</h3>
+                    <h1 class="title">{{ page.next.title }}</h1>
                     {% if page.next.subtitle %}
-                    <p>{{ page.next.subtitle }}</p>
+                    <h2 class="title">{{ page.next.subtitle }}</h2>
+                    {% else %}
+                    <p>&nbsp;</p>
                     {% endif %}
                     </a>
-                </div>
+                </p>
             {% endif %}
+            </article>
+            </div>
         </div>
         <div class="extra-space"></div>
     </div>
