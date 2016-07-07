@@ -6,47 +6,17 @@
   <body>
 
     {% include header.html %}
-
+    <main>
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
+    </main>
 
     {% include footer.html %}
-    <noscript id="deferred-styles">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    </noscript>
     <script>
-        var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-        };
-        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-            webkitRequestAnimationFrame || msRequestAnimationFrame;
-        if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-        else window.addEventListener('load', loadDeferredStyles);
-    </script>
-
-    <script>
-      var hasOpened = false;
-      document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById("navbar-toggle").onclick = () => {
-          if (hasOpened) {
-            document.querySelector('.navbar-toggle').classList.toggle("inactive");
-          }
-          document.querySelector('.navbar-toggle').classList.toggle("active");
-          document.querySelector('.navbar-collapse').classList.toggle("in");
-          hasOpened = true;
-        };
-      });
-      
+      function loadPage(e){if(cache[e])return cache[e];var n=new XMLHttpRequest;return n.open("GET",e,!1),n.send(),cache[e]=n.responseText,n.responseText}function changePage(){var e=window.location.href,n=loadPage(e),t=document.createElement("div");t.innerHTML=n;var a=document.querySelector(".page-content"),r=t.querySelector(".page-content");main.appendChild(r),animate(a,r)}function animate(e,n){e.parentNode.removeChild(e),window.scrollTo(0,0)}document.addEventListener("click",function(e){for(var n=e.target;n&&!n.href;)n=n.parentNode;return n&&!n.hasAttribute("target")?(e.preventDefault(),history.pushState(null,null,n.href),void changePage()):void 0}),window.addEventListener("popstate",changePage);var cache={},main=document.querySelector("main");
     </script>
   </body>
 

@@ -85,6 +85,15 @@
     }
 }
 
+@keyframes dropdown {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 100px;
+    }
+}
+
 .navbar-toggle .icon-bar {
 	  position: relative;
 }
@@ -133,4 +142,10 @@
       animation-duration: 1000ms;
       top: 0px;
       transform: rotate(0deg);
+}
+
+.navbar-collapse.in {
+    animation-name: dropdown;
+    animation-delay: 0ms;
+    animation-duration: 1000ms; 
 }

@@ -465,10 +465,6 @@ i.right {
 .navbar-header {
   float: none;
 }
-.navbar-toggle {
-  display: block;
-  float: left;
-}
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand {
     color: #fff;
 }
@@ -477,25 +473,6 @@ i.right {
   background-color: transparent;
 }
 
-.navbar-collapse {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-.navbar-collapse.collapse {
-  display: none!important;
-}
-.navbar-collapse.collapse.in {
-  display: block!important;
-}
-.navbar-nav {
-  float: none!important;
-}
-.navbar-nav a {
-  font-size: 18px;
-}
-.navbar-nav li {
-  line-height: 0px;
-}
 @media all and (min-width:1500px) {
   .container {
     width: 1470px;
