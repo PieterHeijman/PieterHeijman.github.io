@@ -93,10 +93,6 @@ a {
   color: $black;
 }
 
-.logo {
-  font-family: $primary-font;
-}
-
 small, .small {
     font-size: 80%;
     line-height: 80%;
@@ -124,10 +120,6 @@ img.right {
   margin-left: 10px;
 }
 
-.footer, .footer a {
-  color: $white;
-}
-
 .linkprev a, .linknext a, .linkprev a:hover, .linknext a:hover, .index .title a, .index .title a:hover {
   color: $black;
   text-decoration: none;
@@ -142,30 +134,12 @@ a:hover {
   text-decoration: none;
 }
 
-.hometitle {
-  text-align: left;
-}
-
 .fixed {
   position: fixed !important;
 }
 
 .abs {
   position: absolute;
-}
-
-.header .container {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.logo {
-  float: left;
-  height: 30px;
-  width: 30px;
-  border: 2px solid $white;
-  margin: 10px;
-  padding: 2px;
 }
 
 .main .container {
@@ -233,37 +207,8 @@ aside.left {
   height: 50px;
 }
 
-.footer {
-  background-color: #333136;
-}
-
-.linkprev .image img, .linknext .image img, .index .image img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blurred-container {
-  height: 215px;
-}
-
 .content p a {
   text-decoration: underline;
-}
-
-.footer {
-  font-size: $font-normal;
-  font-family: $primary-font;
-}
-
-.readmore {
-  font-family: $primary-font;
-  font-size: $font-medium;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 25px;
-  display: block;
-  width: 100%;
-  min-height: 52px;
 }
 
 .sharing {
@@ -303,30 +248,8 @@ i.right {
   font-size: $font-medium;
 }
 
-.ad {
-  margin-bottom: 25px;
-}
-
 .header .container a, .header .container a:hover {
   line-height: 65px;
-}
-
-.blurred-container .header {
-  top: 10px;
-}
-
-.logo {
-  float: left;
-  height: 45px;
-  width: 45px;
-  border: 2px solid white;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding: 2px;
-  padding-left: 3px;
-  padding-top: 14px;
-  font-size: 30px;
-  line-height: 30px;
 }
 
 .home h1 {
@@ -344,28 +267,6 @@ i.right {
   margin-right: 0px;
 }
 
-.home .textual {
-  padding-left: 30px;
-  padding-right: 0px;
-  height: 390px;
-  overflow: hidden;
-  position: relative;
-}
-
-.home .textual h2 {
-  font-size: $font-medium;
-}
-
-.home .textual h3 {
-  font-size: $font-normal;
-}
-
-.home .textual p {
-  padding-right: 30px;
-  font-size: 19px;
-  line-height: $font-medium;
-}
-
 .home .image {
   padding: 0px;
   overflow: hidden;
@@ -379,19 +280,6 @@ i.right {
 .home .row > div {
   margin-left: 0px;
   margin-right: 0px;
-}
-
-.home .row .fact {
-  background-color: #f4f4f4;
-  margin-bottom: 0px;
-  padding: 30px;
-  min-height: 150px;
-}
-
-.fact strong, .fact p {
-  font-size: $font-medium;
-  font-family: $primary-font;
-  line-height: 30px;
 }
 
 .home .more a, .home .more a:hover, .home .more a:active {
@@ -411,46 +299,6 @@ i.right {
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-
-.pagination {
-  width: 100%;
-}
-
-.pagination .global {
-  background-color: #a4a400;
-  display: block;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: right;
-  padding-right: 18px;
-  font-family: $primary-font;
-  color: white;
-}
-
-.pagination span.global {
-  background-color: #f4f4f4;
-  color: #d4d4d4;
-}
-
-.pagination .left {
-  float: left;
-}
-
-.pagination .right {
-  float: right;
-}
-
-.pagination .numbers {
-  text-align: center;
-  font-family: $primary-font;
-  line-height: 50px;
-}
-
-.pagination .numbers em, .pagination .numbers a {
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .item3, .item5 {
