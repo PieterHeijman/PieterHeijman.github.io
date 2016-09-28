@@ -1,5 +1,5 @@
 body {
-  padding-top: 75px;
+  padding-top: 0px;
 }
 
 body, .container, .main {
@@ -40,6 +40,10 @@ h1, .h1 {
     font-family: $secondary-font;
 }
 
+article h1, article h2 {
+  text-align: center;
+}
+
 h2, .h2, h2.title {
     font-size: 1.33em;
     line-height: 1em;
@@ -59,10 +63,11 @@ h3 {
     text-align: left;
 }
 
-small.title {
+p.title {
     margin-top: 0px;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 0.8em;
+    line-height: 1em;
+    text-align: center;
 }
 
 .smallcaps {
@@ -130,7 +135,7 @@ a {
 }
 
 a:hover {
-  color: #494949;
+  color: #000;
   text-decoration: none;
 }
 
@@ -196,7 +201,7 @@ aside.left {
 }
 
 .sharing .fa:hover {
-  background-color: #34495e;
+  background-color: #7ea228;
 }
 
 .space {
@@ -216,6 +221,9 @@ aside.left {
   margin-top: 1em;
   margin-bottom: 1em;
   height: 54px;
+  width: 275px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sharing .fa {
@@ -246,6 +254,23 @@ i.right {
 
 .article.col-lg-6 h3 {
   font-size: $font-medium;
+}
+
+article p a {
+  text-decoration: none;
+  border-bottom: 3px solid #7ea228;
+  box-shadow: inset 0px -4px 0px #7ea228;
+  cursor: pointer;
+  transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+article p a:hover, article p a:focus {
+  background-color: #7ea228;
+}
+
+article p.title a, article p.title a {
+  border-bottom: 0px;
+  box-shadow: none;
 }
 
 .header .container a, .header .container a:hover {
@@ -305,20 +330,23 @@ i.right {
   background-color: #f4f4f4;
 }
 
-.navbar-brand {
+.logo {
   float: none;
-  line-height: 45px;   
+  line-height: 45px;
+  color: #000;
+  border: 2px solid #000;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.navbar-header {
-  float: none;
+.logo:hover, .logo::focus {
+  color: #000 !important;
 }
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand {
-    color: #fff;
-}
-.navbar-inverse .navbar-toggle, .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-  border: 0px solid #000;
-  background-color: transparent;
+
+.header {
+  margin-top: 10px;
 }
 
 @media all and (min-width:1500px) {

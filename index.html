@@ -7,7 +7,6 @@ layout: default
   <div class="container">
   <div class="row">
         <div class="col-md-12">
-            <article>
             {% for post in site.posts %}
                 <p>
                     <div class="cat {{ post.category }}"></div>
@@ -24,7 +23,6 @@ layout: default
                 <aside class="right hidden-xs">{{ post.quote }}</aside>
             {% endif %}
             {% endfor %}
-            </article>
         </div>
   </div>
   <div class="space"></div>

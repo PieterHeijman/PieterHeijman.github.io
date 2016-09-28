@@ -10,10 +10,10 @@ layout: default
                     {{ page.title }}<br>
                 </h1>
                 <h2 class="title">{{ page.subtitle }}</h2>
-                <small class="title">
+                <p class="title">
                     Published on : {{ page.readableDate }}<br>
                     Feel free to share this article (<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>)
-                </small>
+                </p>
                 <div class="sharing">
                     <a href="http://www.twitter.com/share" title="Tweet to your friends about this article" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="https://www.facebook.com/sharer/sharer.php" title="Tell all your friends on Facebook about this article" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -62,7 +62,6 @@ layout: default
         </div>
         <div class="row">
             <div class="col-md-12">
-            <article>
             {% if page.previous.title %}
                 <p>
                     <div class="cat {{ page.previous.category }}"></div>
@@ -89,7 +88,6 @@ layout: default
                     </a>
                 </p>
             {% endif %}
-            </article>
             </div>
         </div>
         <div class="extra-space"></div>
