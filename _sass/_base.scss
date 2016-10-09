@@ -40,7 +40,7 @@ h1, .h1 {
     font-family: $secondary-font;
 }
 
-article h1, article h2 {
+article h1.title, article h2.title {
   text-align: center;
 }
 
@@ -259,7 +259,7 @@ i.right {
 article p a {
   text-decoration: none;
   border-bottom: 3px solid #7ea228;
-  box-shadow: inset 0px -4px 0px #7ea228;
+  box-shadow: inset 0px -1px 0px #7ea228;
   cursor: pointer;
   transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
