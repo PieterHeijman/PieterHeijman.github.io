@@ -1,3 +1,46 @@
+// Glyph font
+@font-face {
+    font-family: "winjs-symbols";
+    src: url("../fonts/winjs-symbols.eot");
+    src: url("../fonts/winjs-symbols.eot#iefix") format("embedded-opentype"),
+         url("../fonts/winjs-symbols.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Selawik";
+    src: url("../fonts/selawk.eot");
+    src: url("../fonts/selawk.eot#iefix") format("embedded-opentype"),
+         url("../fonts/selawk.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Selawik Bold";
+    src: url("../fonts/selawkb.eot");
+    src: url("../fonts/selawkb.eot#iefix") format("embedded-opentype"),
+         url("../fonts/selawkb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Selawik Light";
+    src: url("../fonts/selawkl.eot");
+    src: url("../fonts/selawkl.eot#iefix") format("embedded-opentype"),
+         url("../fonts/selawkl.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Selawik Semibold";
+    src: url("../fonts/selawksb.eot");
+    src: url("../fonts/selawksb.eot#iefix") format("embedded-opentype"),
+         url("../fonts/selawksb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Selawik Semilight";
+    src: url("../fonts/selawksl.eot");
+    src: url("../fonts/selawksl.eot#iefix") format("embedded-opentype"),
+         url("../fonts/selawksl.ttf") format("truetype");
+}
+
 body {
   padding-top: 0px;
 }
@@ -78,6 +121,7 @@ p.title {
   font-variant-caps: all-small-caps;
   font-variant: small-caps;
   font-weight: bold;
+  font-family: $bold-font;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
