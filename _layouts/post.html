@@ -10,9 +10,12 @@ layout: default
                     {{ page.title }}<br>
                 </h1>
                 <h2 class="title">{{ page.subtitle }}</h2>
+                {{ content }}
+                </article>
                 <p class="title">
                     Published on : {{ page.readableDate }}<br>
-                    Feel free to share this article (<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>)
+                    Feel free to share this article<br>
+                    (this article was posted under a Creative Commons license<br>for details see : <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>)
                 </p>
                 <div class="sharing">
                     <a href="http://www.twitter.com/share" title="Tweet to your friends about this article" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -21,8 +24,7 @@ layout: default
                     <a href="http://www.reddit.com/submit?url=www.trivialdiscourse.com{{ page.url }}" title="Discuss this article on Reddit" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
                     <a href="https://plus.google.com/share?url=www.trivialdiscourse.com{{ page.url }}" title="Tell all your Google Plus circles about this article" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
                 </div>
-                {{ content }}
-                </article>
+                
             </div>
         </div>
         
