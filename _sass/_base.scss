@@ -124,17 +124,13 @@ p.title {
 }
 
 .smallcaps {
-  font-size: 0.80em;
+  font-size: 0.65em;
   font-kerning: normal;
   font-variant-ligatures: discretionary-ligatures;
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: all-small-caps;
-  font-variant: small-caps;
+  font-variant-numeric: oldstyle-nums;;
   font-weight: bold;
   font-family: $bold-font;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
-  font-feature-settings: "kern", "liga", "clig", "calt", "onum", "pnum", "smcp", "c2sc";
+  text-transform: uppercase;
 }
 
 .photocredits {
