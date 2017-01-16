@@ -93,6 +93,15 @@ h1, .h1 {
 
 article h1.title, article h2.title {
   text-align: center;
+  color: #131313;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #c6c4c4, 
+      2px 2px 1px #cfcdcd, 
+      4px 4px 2px #d8d6d5, 
+      6px 6px 2px #dfdddc, 
+      8px 8px 3px #e4e3e2; 
+
 }
 
 h2, .h2, h2.title {
