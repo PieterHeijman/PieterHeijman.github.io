@@ -67,8 +67,7 @@ body, p, .lead {
     font-family: $primary-font;
     font-size: 21px;
     line-height: 1.5em;
-    font-kerning: normal;
-    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
     font-variant-numeric: oldstyle-nums;
 }
 
@@ -78,7 +77,7 @@ p, .lead {
 
 h1, h2, h3, h4, h5, h6, h1 small {
     font-family: $secondary-font;
-    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
     font-variant-numeric: oldstyle-nums;
     text-align: left;
 }
@@ -136,12 +135,11 @@ p.title {
 }
 
 .smallcaps {
-  font-size: 0.65em;
   font-kerning: normal;
-  font-variant-ligatures: discretionary-ligatures;
-  font-variant-numeric: oldstyle-nums;;
-  font-weight: bold;
-  font-family: $bold-font;
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
+  font-variant-numeric: oldstyle-nums;
+  font-weight: normal;
+  font-family: $primary-font;
   text-transform: uppercase;
 }
 
@@ -324,14 +322,13 @@ i.right {
 
 article p a {
   text-decoration: none;
-  border-bottom: 3px solid #7ea228;
-  box-shadow: inset 0px -1px 0px #7ea228;
+  border-bottom: 2px solid #ccc;
   cursor: pointer;
-  transition: background-color 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: border-color 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
 article p a:hover, article p a:focus {
-  background-color: #7ea228;
+  border-color: #434343;
 }
 
 article p.title a, article p.title a {
@@ -397,6 +394,10 @@ article p.title a, article p.title a {
 }
 
 .logo {
+  font-family: $bold-font;
+  font-size: $font-small;
+  font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
+  font-weight: bold;
   float: none;
   line-height: 45px;
   color: #000;
