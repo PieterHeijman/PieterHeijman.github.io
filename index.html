@@ -11,11 +11,11 @@ layout: default
                 <p>
                     <div class="cat {{ post.category }}"></div>
                     <a rel="prev" href="{{ post.url }}">
-                    <h1 class="title">{{ post.title }}</h1>
+                    <h1 class="title menu-item">{{ post.title }}</h1>
                     {% if post.subtitle %}
                     <h2 class="title">{{ post.subtitle }}</h2>
                     {% else %}
-                    <p>&nbsp;</p>
+                    <h2 class="title">&nbsp;</h2>
                     {% endif %}
                     </a>
                 </p>

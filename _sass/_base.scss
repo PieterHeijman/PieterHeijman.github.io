@@ -65,8 +65,8 @@ body, .container, .main {
 }
 body, p, .lead {
     font-family: $primary-font;
-    font-size: 21px;
-    line-height: 1.5em;
+    font-size: $font-normal;
+    line-height: 1.45em;
     font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
     font-variant-numeric: oldstyle-nums;
 }
@@ -80,12 +80,12 @@ h1, h2, h3, h4, h5, h6, h1 small {
     font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
     font-variant-numeric: oldstyle-nums;
     text-align: left;
+    line-height: 1.2em;
+    margin: 1.414em 0 0.5em;
 }
 
 h1, .h1 {
-    font-size: 1.77em;
-    line-height: 0.84745762em;
-    margin-bottom: 0.42372881em;
+    font-size: $font-large;
     font-weight: 700;
     font-family: $secondary-font;
 }
@@ -107,16 +107,14 @@ article h1.title, article h2.title {
 }
 
 h2, .h2, h2.title {
-    font-size: 1.33em;
-    line-height: 1em;
-    margin-bottom: 1.127819em;
+    font-size: $font-medium;
     font-weight: 700;
     margin-top: 0px;
 }
 
 h2.title {
-    margin-bottom: 1.70em;
     font-weight: normal;
+    margin-bottom: 1.2em;
 }
 
 h3 {
@@ -129,7 +127,7 @@ h3 {
 p.title {
     font-family: $secondary-font;
     margin-top: 0px;
-    font-size: 0.8em;
+    font-size: $font-normal;
     line-height: 1em;
     text-align: center;
 }
@@ -144,7 +142,7 @@ p.title {
 }
 
 .photocredits {
-  font-size: 0.8em;
+  font-size: $font-small;
   font-family: $secondary-font;
 }
 
@@ -163,16 +161,21 @@ a {
 }
 
 small, .small {
-    font-size: 80%;
+    font-size: $font-small;
     line-height: 80%;
 }
+
+h1.menu-item {
+  margin-top: 0px;
+}
+
 .main .container {
   text-align: justify;
 }
 
 aside {
   font-family: $primary-font;
-  font-size: 1.33em;
+  font-size: $font-medium;
   line-height: 1.12em;
 }
 
@@ -187,6 +190,10 @@ aside.left {
 img.right {
   float: right;
   margin-left: 10px;
+}
+
+aside li {
+  list-style-type: none;
 }
 
 .linkprev a, .linknext a, .linkprev a:hover, .linknext a:hover, .index .title a, .index .title a:hover {
@@ -299,7 +306,7 @@ aside.left {
 i.right {
   float: right;
   margin: 10px;
-  font-size: 30px;
+  font-size: $font-medium;
   line-height: 45px;
 }
 
@@ -320,14 +327,14 @@ i.right {
   font-size: $font-medium;
 }
 
-article p a {
+article p a, aside a {
   text-decoration: none;
   border-bottom: 2px solid #ccc;
   cursor: pointer;
   transition: border-color 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
-article p a:hover, article p a:focus {
+article p a:hover, article p a:focus, aside a:hover, aside a:focus {
   border-color: #434343;
 }
 
