@@ -1,51 +1,51 @@
 // Glyph font
 @font-face {
-    font-family: "winjs-symbols";
-    src: url("../fonts/winjs-symbols.eot");
-    src: url("../fonts/winjs-symbols.eot#iefix") format("embedded-opentype"),
-         url("../fonts/winjs-symbols.ttf") format("truetype");
+   font-family: "winjs-symbols";
+   src: url("../fonts/winjs-symbols.eot");
+   src: url("../fonts/winjs-symbols.eot#iefix") format("embedded-opentype"),
+       url("../fonts/winjs-symbols.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Selawik";
-    src: url("../fonts/selawk.eot");
-    src: url("../fonts/selawk.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawk.ttf") format("truetype");
+   font-family: "Selawik";
+   src: url("../fonts/selawk.eot");
+   src: url("../fonts/selawk.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawk.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Selawik Bold";
-    src: url("../fonts/selawkb.eot");
-    src: url("../fonts/selawkb.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawkb.ttf") format("truetype");
+   font-family: "Selawik Bold";
+   src: url("../fonts/selawkb.eot");
+   src: url("../fonts/selawkb.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawkb.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Selawik Light";
-    src: url("../fonts/selawkl.eot");
-    src: url("../fonts/selawkl.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawkl.ttf") format("truetype");
+   font-family: "Selawik Light";
+   src: url("../fonts/selawkl.eot");
+   src: url("../fonts/selawkl.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawkl.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Selawik Semibold";
-    src: url("../fonts/selawksb.eot");
-    src: url("../fonts/selawksb.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawksb.ttf") format("truetype");
+   font-family: "Selawik Semibold";
+   src: url("../fonts/selawksb.eot");
+   src: url("../fonts/selawksb.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawksb.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Selawik Semilight";
-    src: url("../fonts/selawksl.eot");
-    src: url("../fonts/selawksl.eot#iefix") format("embedded-opentype"),
-         url("../fonts/selawksl.ttf") format("truetype");
+   font-family: "Selawik Semilight";
+   src: url("../fonts/selawksl.eot");
+   src: url("../fonts/selawksl.eot#iefix") format("embedded-opentype"),
+       url("../fonts/selawksl.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Source Serif Pro Regular";
-    src: url("../fonts/SourceSerifPro-Regular.eot");
-    src: url("../fonts/SourceSerifPro-Regular.eot#iefix") format("embedded-opentype"),
-         url("../fonts/SourceSerifPro-Regular.ttf") format("truetype");
+   font-family: "Source Serif Pro Regular";
+   src: url("../fonts/SourceSerifPro-Regular.eot");
+   src: url("../fonts/SourceSerifPro-Regular.eot#iefix") format("embedded-opentype"),
+       url("../fonts/SourceSerifPro-Regular.ttf") format("truetype");
 }
 
 html {
@@ -57,79 +57,83 @@ body {
 }
 
 body, .container, .main {
-    background-color: transparent;
+   background-color: transparent;
 }
 
 .container {
-    max-width: 700px;
+   max-width: 700px;
 }
 body, p, .lead {
-    font-family: $primary-font;
-    font-size: $font-normal;
-    line-height: 1.45em;
-    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
-    font-variant-numeric: oldstyle-nums;
+   font-family: $primary-font;
+   font-size: $font-normal;
+   line-height: 1.45em;
+   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
+   font-variant-numeric: oldstyle-nums;
 }
 
 p, .lead {
-    margin-bottom: 1.5em;
+   margin-bottom: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6, h1 small {
-    font-family: $secondary-font;
-    font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
-    font-variant-numeric: oldstyle-nums;
-    text-align: left;
-    line-height: 1.2em;
-    margin: 1.414em 0 0.5em;
+   font-family: $secondary-font;
+   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
+   font-variant-numeric: oldstyle-nums;
+   text-align: left;
+   line-height: 1.2em;
+   margin: 1.414em 0 0.5em;
 }
 
 h1, .h1 {
-    font-size: $font-large;
-    font-weight: 700;
-    font-family: $secondary-font;
+   font-size: $font-large;
+   font-weight: 700;
+   font-family: $secondary-font;
 }
 
 article h1.title, article h2.title {
   text-align: center;
   color: #131313;
-    letter-spacing: .15em;
-    text-shadow: 
-      1px 1px 0 #c6c4c4, 
-      2px 2px 1px #cfcdcd, 
-      3px 3px 2px #d8d6d5,
-      4px 4px 2px #d9d7d6,
-      5px 5px 2px #dfdddc,  
-      6px 6px 2px #ebdfde, 
-      7px 7px 2px #e6e5e4, 
-      8px 8px 2px #e8e7e6; 
+   letter-spacing: .15em;
+   text-shadow: 
+     1px 1px 0 #c6c4c4, 
+     2px 2px 1px #cfcdcd, 
+     3px 3px 2px #d8d6d5,
+     4px 4px 2px #d9d7d6,
+     5px 5px 2px #dfdddc,  
+     6px 6px 2px #ebdfde, 
+     7px 7px 2px #e6e5e4, 
+     8px 8px 2px #e8e7e6; 
 
 }
 
 h2, .h2, h2.title {
-    font-size: $font-medium;
-    font-weight: 700;
-    margin-top: 0px;
+   font-size: $font-medium;
+   font-weight: 700;
+   margin-top: 0px;
 }
 
 h2.title {
-    font-weight: normal;
-    margin-bottom: 1.2em;
+   font-weight: normal;
+   margin-bottom: 1.2em;
 }
 
 h3 {
-    font-size: $font-medium;
-    font-family: $secondary-font;
-    font-weight: 700;
-    text-align: left;
+   font-size: $font-medium;
+   font-family: $secondary-font;
+   font-weight: 700;
+   text-align: left;
 }
 
 p.title {
-    font-family: $secondary-font;
-    margin-top: 0px;
-    font-size: $font-normal;
-    line-height: 1em;
-    text-align: center;
+   font-family: $secondary-font;
+   margin-top: 0px;
+   font-size: $font-normal;
+   line-height: 1em;
+   text-align: center;
+}
+
+.support {
+  text-align: center;
 }
 
 .smallcaps {
@@ -161,8 +165,8 @@ a {
 }
 
 small, .small {
-    font-size: $font-small;
-    line-height: 80%;
+   font-size: $font-small;
+   line-height: 80%;
 }
 
 h1.menu-item {
@@ -348,8 +352,8 @@ article p.title a, article p.title a {
 }
 
 .home h1 {
-    font-size: $font-large;
-    text-transform: uppercase;
+   font-size: $font-large;
+   text-transform: uppercase;
 }
 
 .home .container {
@@ -425,7 +429,7 @@ article p.title a, article p.title a {
 
 @media all and (min-width:1500px) {
   .container {
-    width: 1470px;
+   width: 1470px;
   }
 }
 
@@ -480,3 +484,47 @@ article p.title a, article p.title a {
   color: #5c4454;
   text-decoration: none;
 }
+
+.btn {
+  background-color: #333136;
+  height: 45px;
+  line-height: 30px;
+  font-size: 0.9em;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.btn:hover {
+  background-color: #7ea228;
+}
+
+.card {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 2px solid rgba(0,0,0,.325);
+  border-radius: .25rem;
+  margin-top: 10px;
+}
+
+.card-body {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.card-title {
+	margin-bottom: .75rem;
+}
+
