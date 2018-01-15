@@ -449,8 +449,20 @@ article p.title a, article p.title a {
   text-decoration: none;
 }
 
-.cat.world {
+.world {
   background-color: #115363;
+}
+.nature {
+  background-color: #7ea228;
+}
+.science {
+  background-color: #9d3011;
+}
+.entertainment {
+  background-color: #5c4454;
+}
+.legend {
+  background-color: #5c4454;
 }
 
 .cat.world + a:hover {
@@ -458,28 +470,14 @@ article p.title a, article p.title a {
   text-decoration: none;
 }
 
-.cat.nature {
-  background-color: #7ea228;
-}
-
 .cat.nature + a:hover {
   color: #7ea228;
   text-decoration: none;
 }
-
-.cat.science {
-  background-color: #9d3011;
-}
-
 .cat.science + a:hover {
   color: #9d3011;
   text-decoration: none;
 }
-
-.cat.entertainment {
-  background-color: #5c4454;
-}
-
 .cat.entertainment + a:hover {
   color: #5c4454;
   text-decoration: none;
@@ -499,6 +497,7 @@ article p.title a, article p.title a {
 }
 
 .card {
+  color: #fff;
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -509,11 +508,14 @@ article p.title a, article p.title a {
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;
-	background-color: #fff;
 	background-clip: border-box;
-	border: 2px solid rgba(0,0,0,.325);
+	border: 0px solid rgba(0,0,0,.325);
   border-radius: .25rem;
   margin-top: 10px;
+}
+
+.card a {
+  color: #fff;
 }
 
 .card-body {

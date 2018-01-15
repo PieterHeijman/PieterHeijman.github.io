@@ -5,7 +5,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <article class="{{ page.category }}">
+        <article>
         <h1 class="title">
           {{ page.title }}<br>
         </h1>
@@ -15,7 +15,7 @@ layout: default
 
         <div class="row">
           <div class="col-md-6">
-            <div class="card">
+            <div class="card {{page.category}}">
               <div class="card-body">
                 <p class="card-text">
                   Made it this far? Consider supporting the site.
@@ -23,7 +23,7 @@ layout: default
                 <a href="https://ko-fi.com/M4M07KBW" target="_blank" class="btn btn-primary"><i aria-hidden="true" class="fa fa-coffee"></i>&nbsp;Buy me a coffee</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card {{page.category}}">
               <div class="card-body">
                 <p class="card-text">
                     Published on {{ page.readableDate }} under a Creative Commons license. For details see: 
@@ -33,7 +33,7 @@ layout: default
             </div>
           </div>
           <div class="col-md-6">
-            <div class="card">
+            <div class="card {{page.category}}">
               <div class="card-body">
                 <p class="card-text">
                   Liked this article? Feel free to share it.
@@ -47,7 +47,7 @@ layout: default
                 </p>
               </div>
             </div>
-            <div class="card">
+            <div class="card {{page.category}}">
               <div class="card-body">
                 <p class="card-text">
                   Also on Trivial Discourse:<br>
