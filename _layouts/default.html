@@ -15,9 +15,6 @@
     </main>
 
     {% include footer.html %}
-    <script>
-      function loadPage(e){if(cache[e])return cache[e];var n=new XMLHttpRequest;return n.open("GET",e,!1),n.send(),cache[e]=n.responseText,n.responseText}function changePage(){var e=window.location.href,n=loadPage(e),t=document.createElement("div");t.innerHTML=n;var a=document.querySelector(".page-content"),r=t.querySelector(".page-content");main.appendChild(r),animate(a,r)}function animate(e,n){e.parentNode.removeChild(e),window.scrollTo(0,0)}document.addEventListener("click",function(e){for(var n=e.target;n&&!n.href;)n=n.parentNode;return n&&!n.hasAttribute("target")?(e.preventDefault(),history.pushState(null,null,n.href),void changePage()):void 0}),window.addEventListener("popstate",changePage);var cache={},main=document.querySelector("main");
-    </script>
   </body>
 
 </html>
