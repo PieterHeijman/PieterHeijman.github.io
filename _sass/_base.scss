@@ -19,13 +19,87 @@ body {
   padding-top: 0px;
 }
 
-body, .container, .main {
+body, .container {
    background-color: transparent;
 }
 
-.container {
-   max-width: 700px;
+aside {
+  font-family: $primary-font;
+  font-size: $font-medium;
+  line-height: 1.12em;
 }
+
+
+aside.right {
+  display: block;
+  float: right;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+aside.left {
+  display: block;
+  float: left;
+  width: 250px;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+@media all and (min-width:800px) { 
+  main {
+    display: grid;
+    grid-template-columns: 1fr minmax(700px, auto) 1fr;
+    grid-template-rows: auto;
+  }
+  aside.right {
+    margin-right: -2em;
+    width: 250px;
+  }
+  aside.left {
+    margin-left: -2em;
+    width: 250px;
+  }
+}
+@media all and (max-width:800px) {
+  main {
+    display: grid;
+    grid-template-columns: 2% 1fr 2%;
+    grid-template-rows: auto;
+  }
+  aside.right {
+    margin-right: 1em;
+    width: 250px;
+    text-align: right;
+  }
+  aside.left {
+    margin-left: 1em;
+    width: 250px;
+    text-align: left;
+  }
+}
+@media all and (max-width:400px) {
+  aside.right {
+    margin: 10px 0 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+  aside.left {
+    margin: 10px 0 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+.page-content {
+  grid-column-start: 2;
+  width: 100%;
+  max-width: 700px;
+}
+
 body, p, .lead {
    font-family: $primary-font;
    font-size: $font-normal;
@@ -136,23 +210,11 @@ h1.menu-item {
   margin-top: 0px;
 }
 
-.main .container {
+article {
   text-align: justify;
 }
 
-aside {
-  font-family: $primary-font;
-  font-size: $font-medium;
-  line-height: 1.12em;
-}
 
-aside.right {
-  text-align: right;
-}
-
-aside.left {
-  text-align: left;
-}
 
 img.right {
   float: right;
@@ -188,26 +250,6 @@ a:hover {
 .main .container {
   margin-bottom: 30px;
   position: relative;
-}
-
-aside.right {
-  display: block;
-  float: right;
-  width: 250px;
-  margin-top: 1em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-  margin-right: -2em;
-}
-
-aside.left {
-  display: block;
-  float: left;
-  width: 250px;
-  margin-top: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-left: -2em;
 }
 
 .sharing  .share {
@@ -388,12 +430,6 @@ article p.title a, article p.title a {
 
 .header {
   margin-top: 10px;
-}
-
-@media all and (min-width:1500px) {
-  .container {
-   width: 1470px;
-  }
 }
 
 .cat {
