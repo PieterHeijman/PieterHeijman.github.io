@@ -7,99 +7,39 @@ layout: default
   </h1>
   <h2 class="title">{{ page.subtitle }}</h2>
   {{ content }}
-</article>
-
-<!--
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card {{page.category}}">
-              <div class="card-body">
-                <p class="card-text">
-                  Made it this far? Consider supporting the site.
-                </p>
-                <a href="https://ko-fi.com/M4M07KBW" target="_blank" class="btn btn-primary"><i aria-hidden="true" class="fa fa-coffee"></i>&nbsp;Buy me a coffee</a>
-              </div>
-            </div>
-            <div class="card {{page.category}}">
-              <div class="card-body">
-                <p class="card-text">
-                    Published on {{ page.readableDate }} under a Creative Commons license. For details see: 
-                </p>
-                <a rel="license" class="btn btn-primary" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card {{page.category}}">
-              <div class="card-body">
-                <p class="card-text">
-                  Liked this article? Feel free to share it.
-                  <div class="sharing">
-                    <a href="http://www.twitter.com/share" title="Tweet to your friends about this article" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="https://www.facebook.com/sharer/sharer.php" title="Tell all your friends on Facebook about this article" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a data-pin-do="buttonBookmark" href="https://pinterest.com/pin/create/button" title="Pin this article to you Pinterest boards" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                    <a href="http://www.reddit.com/submit?url=www.trivialdiscourse.com{{ page.url }}" title="Discuss this article on Reddit" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-                    <a href="https://plus.google.com/share?url=www.trivialdiscourse.com{{ page.url }}" title="Tell all your Google Plus circles about this article" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                  </div>
-                </p>
-              </div>
-            </div>
-            <div class="card {{page.category}}">
-              <div class="card-body">
-                <p class="card-text">
-                  Also on Trivial Discourse:<br>
-                </p>
-                <p class="card-text">
-                  {% if page.previous.title %}
-                    <a rel="prev" href="{{ page.previous.url }}">
-                      <strong>{{ page.previous.title }}</strong><br>
-                      {{ page.previous.subtitle }}
-                    </a>
-                  {% endif %}
-                </p>
-                <p class="card-text">
-                  {% if page.next.title %}
-                    <a rel="prev" href="{{ page.next.url }}">
-                      <strong>{{ page.next.title }}</strong><br>
-                      {{ page.next.subtitle }}
-                    </a>
-                  {% endif %}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    
-    <div class="space"></div>			
-    <div class="row">
-      <div class="col-md-12">
-        {% if page.image_creditlink %}
-        <div class="photocredits"><a href="{{ page.image_creditlink }}" target="_blank">{{ page.image_credits }}</a></div>
-        {% endif %}
-        {% if page.indepth_1 %}
-        <div class="space"></div>
-        <strong>In-depth reading</strong><br>
-        <ul>
-          {% if page.indepth_1.title %}
-          <li><a href="{{ page.indepth_1.url }}" rel="prev" target="_blank">{{ page.indepth_1.title }}</a></li>
-          {% endif%}
-          {% if page.indepth_2.title %}
-          <li><a href="{{ page.indepth_2.url }}" rel="prev" target="_blank">{{ page.indepth_2.title }}</a></li>
-          {% endif%}
-          {% if page.indepth_3.title %}
-          <li><a href="{{ page.indepth_3.url }}" rel="prev" target="_blank">{{ page.indepth_3.title }}</a></li>
-          {% endif%}
-          {% if page.indepth_4.title %}
-          <li><a href="{{ page.indepth_4.url }}" rel="prev" target="_blank">{{ page.indepth_4.title }}</a></li>
-          {% endif%}
-          {% if page.indepth_5.title %}
-          <li><a href="{{ page.indepth_5.url }}" rel="prev" target="_blank">{{ page.indepth_5.title }}</a></li>
-          {% endif%}
-        </ul>
-        {% endif%}
-      </div>
-    </div>
-    <div class="extra-space"></div>
+  
+  <div class="index">
+    <p class="index-item">
+      Made it this far? Consider supporting the site by 
+      <i aria-hidden="true" class="fa fa-coffee"></i>&nbsp;<a href="https://ko-fi.com/M4M07KBW" target="_blank">buying me a coffee</a>
+    </p>
+    <p class="index-item">
+      Published on {{ page.readableDate }} under a Creative Commons license. For details see: 
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>
+    </p>
+    <p class="index-item">
+      Liked this article? Feel free to share it.
+      <span class="sharing">
+        <a href="http://www.twitter.com/share" title="Tweet to your friends about this article" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/sharer/sharer.php" title="Tell all your friends on Facebook about this article" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a data-pin-do="buttonBookmark" href="https://pinterest.com/pin/create/button" title="Pin this article to you Pinterest boards" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        <a href="http://www.reddit.com/submit?url=www.trivialdiscourse.com{{ page.url }}" title="Discuss this article on Reddit" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+        <a href="https://plus.google.com/share?url=www.trivialdiscourse.com{{ page.url }}" title="Tell all your Google Plus circles about this article" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+      </span>
+    </p>
+    <p class="index-item">
+      Looking for more of this? Read one of the following article(s)
+    </p>
+    {% if page.previous.title %}
+    <a class="index-item" rel="prev" href="{{ page.previous.url }}">
+      {{ page.previous.title }}
+    </a>
+    {% endif %}
+    {% if page.next.title %}
+    <a class="index-item" rel="prev" href="{{ page.NEXT.url }}">
+      {{ page.next.title }}
+    </a>
+    {% endif %}
   </div>
--->
+  
+</article>
