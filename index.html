@@ -5,10 +5,13 @@ sitemap:
     changefreq: 'monthly'
     lastmod: 2017-10-01
 ---
-
-<div>
+<article>
+<h1 class="title">
+  Index
+</h1>
+<div class="index">
   {% for post in site.posts %}
-  <a rel="prev" class="index {{ post.category }}" href="{{ post.url }}">
+  <a rel="prev" class="index-item {{ post.category }}" href="{{ post.url }}">
     <h1>{{ post.title }}</h1>
     {% if post.subtitle %}
     <h2>{{ post.subtitle }}</h2>
@@ -18,3 +21,4 @@ sitemap:
   </a>
 {% endfor %}
 </div>
+</article>
