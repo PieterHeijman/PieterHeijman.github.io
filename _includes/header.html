@@ -1,3 +1,40 @@
 <div class="header text-center">
-    <a class="logo smallcaps" href="/">Trivial Discourse</a>
+  <div class="nav">
+      <a class="logo smallcaps" href="/">
+        <strong>Trivial</strong>Discourse
+      </a>
+      <input class="menu-toggle" type="checkbox" />
+      <div class="hamburger"></div>
+      <div class="menu">
+        <div class="content">
+          <p>
+            Also read one of the following article(s)<br>
+            {% if page.previous.title %}
+            &ldquo;<a rel="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>&rdquo;<br>
+            {% endif %}
+            {% if page.next.title %}
+            &ldquo;<a rel="prev" href="{{ page.next.url }}">{{ page.next.title }}</a>&rdquo;<br>
+            {% endif %}
+            Or take a look at <a href="/">the index</a> for all articles.
+          </p>
+          <p>
+            Everything on this site is written by me and provided to you under a creative commons license (see <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">cc-by-nc-sa</a>).
+          </p>
+          <p>
+            Thank you for visiting. If you enjoyed your stay, please consider supporting me by <a href="https://ko-fi.com/M4M07KBW" target="_blank" rel="noopener">buying me a coffee</a>.
+          </p>
+          <p>
+            Feel free to share this page:<br>
+            <span class="sharing">
+              <a href="http://www.twitter.com/share" title="Tweet to your friends about this article" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/sharer/sharer.php" title="Tell all your friends on Facebook about this article" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a data-pin-do="buttonBookmark" href="https://pinterest.com/pin/create/button" title="Pin this article to you Pinterest boards" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+              <a href="http://www.reddit.com/submit?url=www.trivialdiscourse.com{{ page.url }}" title="Discuss this article on Reddit" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/share?url=www.trivialdiscourse.com{{ page.url }}" title="Tell all your Google Plus circles about this article" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </span>
+          </p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
 </div>

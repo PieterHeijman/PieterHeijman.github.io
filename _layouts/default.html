@@ -3,15 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{page.category}}">
 
-    {% include header.html %}
     <main>
-    <div class="page-content">
-      <div class="wrapper">
+      <div class="page-content">
+        {% include header.html %}
         {{ content }}
       </div>
-    </div>
     </main>
 
     {% include footer.html %}
