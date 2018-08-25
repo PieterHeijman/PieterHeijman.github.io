@@ -1,11 +1,3 @@
-// Glyph font
-@font-face {
-   font-family: "winjs-symbols";
-   src: url("../fonts/winjs-symbols.eot");
-   src: url("../fonts/winjs-symbols.eot#iefix") format("embedded-opentype"),
-       url("../fonts/winjs-symbols.ttf") format("truetype");
-}
-
 @font-face {
    font-family: "Barlow Semi Condensed";
    src: url("../fonts/BarlowSemiCondensed-Regular.ttf") format("truetype");
@@ -13,7 +5,7 @@
 
 html {
   font-style:normal;
-  font-weight:normal;
+  font-weight:200;
 }
 body {
   padding-top: 0px;
@@ -202,10 +194,6 @@ hr {
   border: 1px solid black;
 }
 
-a {
-  color: $black;
-}
-
 small, .small {
    font-size: $font-small;
    line-height: 80%;
@@ -219,8 +207,6 @@ article {
   text-align: justify;
 }
 
-
-
 img.right {
   float: right;
   margin-left: 10px;
@@ -230,17 +216,12 @@ aside li {
   list-style-type: none;
 }
 
-.linkprev a, .linknext a, .linkprev a:hover, .linknext a:hover, .index-item .title a, .index-item .title a:hover {
-  color: $black;
-  text-decoration: none;
-}
-
 a {
   color: $black;
 }
 
 a:hover {
-  color: #000;
+  color: $black;
   text-decoration: none;
 }
 
@@ -258,8 +239,8 @@ a:hover {
   margin-right: 5px;
   margin-top: 10px;
   padding: 5px;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   float: left;
   color: white;
   text-align: center;
@@ -269,8 +250,20 @@ a:hover {
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.sharing .fa:hover {
-  background-color: #7ea228;
+.world  .sharing .fa:hover {
+  background-color: $world;
+}
+.nature .sharing .fa:hover {
+  background-color: $nature;
+}
+.science .sharing .fa:hover {
+  background-color: $science;
+}
+.entertainment .sharing .fa:hover {
+  background-color: $entertainment;
+}
+.legend .sharing .fa:hover {
+  background-color: $legend;
 }
 
 .space {
@@ -281,10 +274,6 @@ a:hover {
   height: 50px;
 }
 
-.content p a {
-  text-decoration: underline;
-}
-
 i.right {
   float: right;
   margin: 10px;
@@ -293,41 +282,57 @@ i.right {
 }
 
 .header {
+  height: 50px;
   margin-bottom: 10px;
+  position: relative;
 }
 
-article p a, aside a {
+article p a, 
+aside a,
+.menu a {
   text-decoration: none;
   border-bottom: 2px solid #ccc;
   cursor: pointer;
   transition: border-color 0.5s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 
-article p a:hover, article p a:focus, aside a:hover, aside a:focus {
+article p a:hover, 
+article p a:focus, 
+aside a:hover, 
+aside a:focus,
+.menu a:hover,
+.menu a:focus {
   border-color: #434343;
 }
 
-article p.title a, article p.title a {
+article p.title a, 
+article p.title a {
   border-bottom: 0px;
   box-shadow: none;
 }
 
 .logo {
+  z-index: 999;
   display: block;
   font-family: $bold-font;
   font-size: $font-small;
   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
-  font-weight: normal;
-  float: none;
+  font-weight: 200;
+  float: left;
   color: $black;
   line-height: 200%;
   text-decoration: none;
+  width: 200px;
+
+  strong {
+    font-weight: 900;
+  }
 }
 
 .logo::before, .index-item h1::before {
   display: block;
   content: "";
-  background-color: #9d3011;
+  background-color: $science;
   width: 15px;
   height: $font-large;
   margin-right: 10px;
@@ -344,21 +349,43 @@ article p.title a, article p.title a {
   float: left;
 }
 
-.world .logo::before, .index-item.world h1::before {
-  background-color: #115363;
+.world .logo::before, 
+.index-item.world h1::before {
+  background-color: $world;
 }
-.nature .logo::before, .index-item.nature h1::before {
-  background-color: #7ea228;
+.nature .logo::before, 
+.index-item.nature h1::before {
+  background-color: $nature;
 }
-.science .logo::before, .index-item.science h1::before {
-  background-color: #9d3011;
+.science .logo::before, 
+.index-item.science h1::before {
+  background-color: $science;
 }
-.entertainment .logo::before, .index-item.entertainment h1::before {
-  background-color: #5c4454;
+.entertainment .logo::before, 
+.index-item.entertainment h1::before {
+  background-color: $entertainment;
 }
-.legend .logo::before, .index-item.legend h1::before {
-  background-color: #756b30;
+.legend .logo::before, 
+.index-item.legend h1::before {
+  background-color: $legend;
 }
+
+.world .hamburger {
+  color: $world;
+}
+.nature .hamburger {
+  color: $nature;
+}
+.science .hamburger {
+  color: $science;
+}
+.entertainment .hamburger {
+  color: $entertainment;
+}
+.legend .hamburger {
+  color: $legend;
+}
+
 
 .logo a {
   text-decoration: none;
@@ -394,5 +421,9 @@ a.index-item {
 }
 
 .btn:hover { 
-  background-color: #7ea228;
+  background-color: $nature;
+}
+
+.img-responsive {
+  width: 100%;
 }

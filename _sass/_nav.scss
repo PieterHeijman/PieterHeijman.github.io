@@ -1,0 +1,57 @@
+.nav {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  input {
+    width: 40px;
+    margin-top: 2px;
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    transform: translate(10px, -5px);
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0px;
+
+    &::before {
+      content: "\f0c9";
+      font-family: FontAwesome;
+    }
+  }
+
+  input.menu-toggle:checked ~ .hamburger {
+    &::before {
+      content: "\f00d";
+    }
+  }
+
+  input.menu-toggle:checked ~ .menu {
+    opacity: 1;
+    display: block;
+  }
+  
+  .menu {
+    display: none;
+    background-color: $white;
+    font-size: $font-normal;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    box-shadow: 0 15px 15px lighten($black, 75%);
+    transition: opacity 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    
+    .content {
+      padding: 20px;
+    }
+  }
+}

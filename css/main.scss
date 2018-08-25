@@ -16,7 +16,14 @@ $font-small: .7862em;
 $white: #fafafa;
 $black: #232323;
 
+$world: #115363;
+$nature: #7ea228;
+$science: #9d3011;
+$entertainment: #5c4454;
+$legend: #756b30;
+
 @import
         "base",
+        "nav",
         "font-awesome"
         ;
