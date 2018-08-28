@@ -4,22 +4,21 @@
 }
 
 html {
-  font-style:normal;
-  font-weight:200;
+  @include main-font('normal');
 }
 body {
   padding-top: 0px;
+  background-color: $white;
 }
 
-body {
-   background-color: $white;
-   color: $black;
+body, 
+p, 
+.lead {
+  @include main-font('normal');
 }
 
 aside {
-  font-family: $primary-font;
-  font-size: $font-medium;
-  line-height: 1.12em;
+  @include main-font('medium');
 }
 
 aside.right {
@@ -99,14 +98,6 @@ aside.left {
   display: block;
   width: 100%;
   height: 150px;
-}
-
-body, p, .lead {
-   font-family: $primary-font;
-   font-size: $font-normal;
-   line-height: 1.45em;
-   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
-   font-variant-numeric: oldstyle-nums;
 }
 
 p, .lead {
