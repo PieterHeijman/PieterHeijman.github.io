@@ -1,0 +1,10 @@
+@import "true";
+
+@include describe('Tests working') {
+  @include it('Just testing to see if unit testing works') {
+    @include assert-equal(
+      1,
+      1
+    );
+  }
+}
