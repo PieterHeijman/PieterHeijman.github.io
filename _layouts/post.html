@@ -2,17 +2,26 @@
 layout: default
 ---
 <article>
-  <h1 class="title">
-    {{ page.title }}<br>
-  </h1>
-  <h2 class="title">{{ page.subtitle }}</h2>
-  {{ content }}
+  <div class="content-head">
+    <nav>
+      <a class="logo smallcaps" href="/">
+        <strong>Trivial</strong>Discourse
+      </a>
+    </nav>
+    <h1 class="title">
+      {{ page.title }}<br>
+    </h1>
+    <h2 class="title">{{ page.subtitle }}</h2>
+    <div class="subtitle">
+      <p>
+      Written by <a href="https://ko-fi.com/M4M07KBW" target="_blank" rel="noopener">me</a>,<br>
+      {{ page.readableDate }}
+      </p>
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">cc-by-nc-sa</a>
+    </div>
+  </div>
   
-  <div class="subtitle">
-    <p>
-    Written by <a href="https://ko-fi.com/M4M07KBW" target="_blank" rel="noopener">me</a>,<br>
-    {{ page.readableDate }}
-    </p>
-    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">cc-by-nc-sa</a>
+  <div class="main-content">
+  {{ content }}
   </div>
 </article>

@@ -5,20 +5,25 @@ sitemap:
     changefreq: 'monthly'
     lastmod: 2017-10-01
 ---
-<article>
-<h1 class="title">
-  Index
-</h1>
-<div class="index">
-  {% for post in site.posts %}
-  <a rel="prev" class="index-item {{ post.category }}" href="{{ post.url }}">
-    <h1>{{ post.title }}</h1>
-    {% if post.subtitle %}
-    <h2>{{ post.subtitle }}</h2>
-    {% else %}
-    <h2>&nbsp;</h2>
-    {% endif %}
-  </a>
-{% endfor %}
+<div class="home">
+  <nav>
+    <a class="logo smallcaps" href="/">
+      <strong>Trivial</strong>Discourse
+    </a>
+  </nav>
+  <h1 class="title">
+      Table of contents
+  </h1>
+  <div class="index">
+    {% for post in site.posts %}
+    <a rel="prev" class="index-item {{ post.category }}" href="{{ post.url }}">
+      <h1>{{ post.title }}</h1>
+      {% if post.subtitle %}
+      <h2>{{ post.subtitle }}</h2>
+      {% else %}
+      <h2>&nbsp;</h2>
+      {% endif %}
+    </a>
+  {% endfor %}
+  </div>
 </div>
-</article>

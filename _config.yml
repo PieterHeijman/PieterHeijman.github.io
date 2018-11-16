@@ -16,3 +16,4 @@ url: "http://www.trivialdiscourse.com" # the base hostname & protocol for your s
 # Build settings
 markdown: kramdown
 excerpt_separator: <!--more-->
+exclude: [node_modules]
