@@ -25,3 +25,21 @@ layout: default
   {{ content }}
   </div>
 </article>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{ page.title }} ",
+    "datePublished": "{{ page.sitemap.lastmod | date_to_xmlschema }}",
+    "dateModified": "{{ page.sitemap.lastmod | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": "Pieter Heijman"
+    },
+     "publisher": {
+      "@type": "Organization",
+      "name": "Trivial Discourse"
+    },
+    "description": "{{ page.title }} {{ page.subtitle }}"
+  }
+</script>  
