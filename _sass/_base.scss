@@ -538,16 +538,16 @@ a.index-item {
 
     &:after {
       content: '';
-      top: 11px;
+      top: 10px;
       background-color: $world;
       width: 80px;
       transform: rotate(45deg);
       height: 80px;
-      left: -51px;
+      left: -52px;
       display: block;
       z-index: -1;
       position: absolute;
-      border-radius: 10px;
+      border-radius: 9px;
     }
 
     span {
