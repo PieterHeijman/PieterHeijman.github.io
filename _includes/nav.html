@@ -1,0 +1,22 @@
+<div class="navigation">
+  <input type="checkbox" name="show-nav" class="show-nav">
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav class="main-navigation">
+    <div class="title">Navigation</div>
+    <ul>
+      <li>
+        <a href="/">To the <em>table of contents</em></a>
+      </li>
+    </ul>
+    <div class="divider">Most recent articles</div>
+    <ul class="recent">
+      {% for post in site.posts limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

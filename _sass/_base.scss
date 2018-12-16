@@ -59,13 +59,6 @@ nav {
 }
 
 @media all and (max-width:800px) {
-  nav {
-    position: absolute;
-    height: 50px;
-    top: 15px;
-    margin-top: 0px;
-  }
-
   article {
     width: 90vw;
     margin-left: auto;
@@ -122,6 +115,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-top: 100px;
   }
 
   aside.right {
@@ -197,6 +191,7 @@ article h1.title,
 article h2.title {
   text-align: left;
   color: #131313;
+  font-weight: 900;
   letter-spacing: .15em;
   text-shadow:
     1px 1px 0 #c6c4c4,
@@ -360,7 +355,7 @@ i.right {
 
 article p a,
 aside a,
-.menu a {
+.main-navigation a {
   text-decoration: none;
   border-bottom: 2px solid #ccc;
   cursor: pointer;
@@ -371,8 +366,8 @@ article p a:hover,
 article p a:focus,
 aside a:hover,
 aside a:focus,
-.menu a:hover,
-.menu a:focus {
+.main-navigation a:hover,
+.main-navigation a:focus {
   border-color: #434343;
 }
 
@@ -426,9 +421,19 @@ article p.title a {
   background-color: $world;
 }
 
+.world article h1.title,
+.world article h2.title {
+  color: $world;
+}
+
 .nature .logo::before,
 .index-item.nature h1::before {
   background-color: $nature;
+}
+
+.nature article h1.title,
+.nature article h2.title {
+  color: $nature;
 }
 
 .science .logo::before,
@@ -436,9 +441,19 @@ article p.title a {
   background-color: $science;
 }
 
+.science article h1.title,
+.science article h2.title {
+  color: $science;
+}
+
 .entertainment .logo::before,
 .index-item.entertainment h1::before {
   background-color: $entertainment;
+}
+
+.entertainment article h1.title,
+.entertainment article h2.title {
+  color: $entertainment;
 }
 
 .legend .logo::before,
@@ -446,26 +461,10 @@ article p.title a {
   background-color: $legend;
 }
 
-.world .hamburger {
-  color: $world;
-}
-
-.nature .hamburger {
-  color: $nature;
-}
-
-.science .hamburger {
-  color: $science;
-}
-
-.entertainment .hamburger {
-  color: $entertainment;
-}
-
-.legend .hamburger {
+.legend article h1.title,
+.legend article h2.title {
   color: $legend;
 }
-
 
 .logo a {
   text-decoration: none;
@@ -508,4 +507,204 @@ a.index-item {
 
 .img-responsive {
   width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .hamburger {
+    position: absolute;
+    left: 9px;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+    z-index: 999;
+    transform: translateX(0);
+    transition: transform 0.3s linear;
+    
+    &:before {
+      content: '';
+      display: block;
+      background-color: $world;
+      width: 50px;
+      height: 100px;
+      position: absolute;
+      top: -50px;
+      left: -9px;
+    }
+
+    &:after {
+      content: '';
+      top: 11px;
+      background-color: $world;
+      width: 80px;
+      transform: rotate(45deg);
+      height: 80px;
+      left: -52px;
+      display: block;
+      z-index: -1;
+      position: absolute;
+      border-radius: 10px;
+    }
+
+    span {
+      background-color: #dfdddc;
+      width: 24px;
+      height: 4px;
+      display: block;
+      position: absolute;
+      left: 0px;
+      pointer-events: none;
+
+      &:first-child {
+        top: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+
+      &:nth-child(3) {
+        top: 20px;
+      }
+    }
+
+  }
+
+  .show-nav {
+    position: absolute;
+    left: 9px;
+    top: 30px;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    opacity: 0;
+    z-index: 1000;
+    transition: transform 0.3s linear;
+    cursor: pointer;
+
+    &:checked {
+      & ~ .main-navigation,
+      & ~ .hamburger {
+        transform: translateX(247px);
+      }
+
+      transform: translateX(247px);
+    }
+  }
+
+  .main-navigation {
+    position: absolute;
+    margin-top: 0;
+    left: -247px;
+    width: 250px;
+    transform: translateX(0);
+    top: 0;
+    height: 100vh;
+    background-color: $world;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-left: 15px;
+    transition: transform 0.3s linear;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      a {
+        color: $white;
+        border-color: transparent;
+
+        &:hover,
+        &:active {
+          border-color: $white;
+        }
+      }
+    }
+  }
+
+  .title {
+    color: $white;
+    line-height: 24px;
+  }
+
+  .divider {
+    color: $white;
+    font-weight: 900;
+  }
+
+  .recent {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.world .navigation {
+  .hamburger {
+    &:before,
+    &:after {
+      background-color: $world;
+    }
+  }
+  
+  .main-navigation {
+    background-color: $world;
+  }
+}
+
+.entertainment .navigation {
+  .hamburger {
+    &:before,
+    &:after {
+      background-color: $entertainment;
+    }
+  }
+  
+  .main-navigation {
+    background-color: $entertainment;
+  }
+}
+
+.nature .navigation {
+  .hamburger {
+    &:before,
+    &:after {
+      background-color: $nature;
+    }
+  }
+  
+  .main-navigation {
+    background-color: $nature;
+  }
+}
+
+.legend .navigation {
+  .hamburger {
+    &:before,
+    &:after {
+      background-color: $legend;
+    }
+  }
+  
+  .main-navigation {
+    background-color: $legend;
+  }
+}
+
+
+.science .navigation {
+  .hamburger {
+    &:before,
+    &:after {
+      background-color: $science;
+    }
+  }
+  
+  .main-navigation {
+    background-color: $science;
+  }
 }
