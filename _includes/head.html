@@ -11,7 +11,16 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" media="screen" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  
+  <meta name="apple-mobile-web-app-title" content="Trivial Discourse" />
+  <meta name="application-name" content="Trivial Discourse" />
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#305251" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/fav-180.png" />
+  <link rel="manifest" href="/img/favicon/manifest.json" />
+  <link rel="icon" type="image/png" href="/img/favicon/fav-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/img/favicon/fav-16.png" sizes="16x16" />
 
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}" />
   <meta property="og:description" content="{{ site.description }}" />
