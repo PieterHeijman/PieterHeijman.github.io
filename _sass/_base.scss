@@ -568,6 +568,10 @@ a.index-item {
 }
 
 @media (max-width: 767px) {
-    #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
-    #cookie-notice a {position: relative; bottom: 4px;}
+  #cookie-notice span {
+    display: block; padding-top: 3px; margin-bottom: 1rem;
+  }
+  #cookie-notice a {
+    position: relative; bottom: 4px;
+  }
 }
