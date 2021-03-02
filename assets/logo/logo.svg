@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 72px;
+        fill: #f23a29;
+        font-family: Cookie;
+      }
+    </style>
+  </defs>
+  <text id="Trivial" class="cls-1" transform="matrix(7.621, -1.62, 0, 7.621, 20.24, 642.684)">Trivial</text>
+  <text id="Discourse" class="cls-1" transform="matrix(7.621, -1.62, 0, 7.621, 323.833, 994.346)">Discourse</text>
+</svg>

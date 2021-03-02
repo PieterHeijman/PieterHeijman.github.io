@@ -1,7 +1,27 @@
-// Sass configuration
 {
-    "version": "0.1.0",
-    "command": "node-sass",
-    "isShellCommand": true,
-    "args": ["main.scss", "main.css"]
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "Start jekyll (drafts, future)",
+          "command": "jekyll",
+          "args": [
+              "serve",
+              "-w",
+              "-D",
+              "--future"
+          ],
+          "type": "shell",
+          "problemMatcher": []
+      },
+      {
+          "label": "Start jekyll",
+          "command": "jekyll",
+          "args": [
+              "serve",
+              "-w"
+          ],
+          "type": "shell",
+          "problemMatcher": []
+      }
+  ]
 }

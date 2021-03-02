@@ -1,0 +1,35 @@
+section.post-list {
+  ul {
+    list-style: none;
+    padding: $space-none;
+    padding-bottom: $space-200;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    .post {
+      padding-top: $space-300;
+      padding-right: $space-300;
+
+      a {
+        display: block;
+        text-decoration: none;
+        width: 400px;
+        max-width: 70vw;
+        padding: $space-300;
+        background-color: map-get($colors, "blue");
+
+        &:active,
+        &:hover,
+        &:visited {
+          text-decoration: none;
+        }
+
+        .category {
+          color: lighten(map-get($colors, "light-blue"), 30%);
+        }
+      }
+    }
+  }
+}

@@ -1,29 +1,6 @@
 ---
 layout: default
-sitemap:
-    priority: 0.7
-    changefreq: 'monthly'
-    lastmod: 2017-10-01
+title: Hello World
+description: This is a test page for my new blog
 ---
-<div class="home">
-  <nav>
-    <a class="logo smallcaps" href="/">
-      <strong>Trivial</strong>Discourse
-    </a>
-  </nav>
-  <h1 class="title">
-      Table of contents
-  </h1>
-  <div class="index">
-    {% for post in site.posts %}
-    <a rel="prev" class="index-item {{ post.category }}" href="{{ post.url }}">
-      <h1>{{ post.title }}</h1>
-      {% if post.subtitle %}
-      <h2>{{ post.subtitle }}</h2>
-      {% else %}
-      <h2>&nbsp;</h2>
-      {% endif %}
-    </a>
-    {% endfor %}
-  </div>
-</div>
+

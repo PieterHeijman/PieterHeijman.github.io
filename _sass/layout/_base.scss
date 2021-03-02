@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    background-color: map-get($colors, "deep-blue");
+
+    section.content {
+      width: calc(100vw - 2em);
+      max-width: 1900px;
+      margin: 1em;
+      margin-top: $header-small + $space-300;
+
+      @media (min-width: 1024px) {
+        margin-top: $header-large + $space-300;
+      }
+    }
+
+    section.block {
+      margin-top: $space-400;
+      margin-bottom: $space-500;
+    }
+  }
+}

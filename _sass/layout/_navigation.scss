@@ -1,0 +1,27 @@
+section.header {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: $header-small;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    height: 120px;
+  }
+
+  .logo {
+    max-width: $header-large;
+    height: 70px;
+
+    @media (min-width: 1024px) {
+      $scale : $header-large / $header-small;
+      $shift : ($header-large - $header-small) / 2;
+      transform: scale($scale) translateX($shift);
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<section class="block post-list">
+  <h2>Latest posts</h2>
+  <ul class="latest-posts">
+    {% for post in site.posts %}
+      <li class="post">
+        <a class="item-inner" href="{{ post.url }}">
+          <h3>{{ post.title }}</h3>
+          <span class="category">{{ post.category }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
