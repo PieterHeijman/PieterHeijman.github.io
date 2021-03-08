@@ -3,12 +3,7 @@
   <ul class="latest-posts">
     {% for post in site.posts %}
       {% if post.category == 'Generative Art' %}
-        <li class="post">
-          <a class="item-inner" href="{{ post.url }}">
-            <h3>{{ post.title }}</h3>
-            <span class="category">{{ post.category }}</span>
-          </a>
-        </li>
+        {% include list-post.html %}
       {% endif %}
     {% endfor %}
   </ul>

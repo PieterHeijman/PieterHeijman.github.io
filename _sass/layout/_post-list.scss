@@ -27,7 +27,12 @@ section.post-list {
         }
 
         .category {
-          color: lighten(map-get($colors, "light-blue"), 30%);
+          font-weight: 700;
+        }
+
+        .date,
+        .category {
+          color: lighten(map-get($colors, "blue"), 40%);
         }
       }
     }
