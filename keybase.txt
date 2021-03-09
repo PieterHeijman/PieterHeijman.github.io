@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/pieterheijman
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.trivialdiscourse.com
+  * I am pieterheijman (https://keybase.io/pieterheijman) on keybase.
+  * I have a public key with fingerprint A1A5 5055 0A2D 9BCF 3460  C785 22E5 ECA8 9924 F32C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120feb8571f625e035f9e8931f3d674115dc728c77a8e767ba9154e1da4cf7d08c40a",
+      "fingerprint": "a1a550550a2d9bcf3460c78522e5eca89924f32c",
+      "host": "keybase.io",
+      "key_id": "22e5eca89924f32c",
+      "kid": "0101c64022563c08e77206bddb8e6324f8f4f74b84e168a1617bb759a2a0639d184e0a",
+      "uid": "1d67d16f8a5c566789576271755a6d19",
+      "username": "pieterheijman"
+    },
+    "service": {
+      "hostname": "www.trivialdiscourse.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1501713737,
+  "expire_in": 157680000,
+  "prev": "0312f93ee91d0b9f5cad09ff868027af9947eb8c83b4916db8eedfd3f83cd19f",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMN/AnicbZJ9TFVlHMcv4AuBvJSIhTPyQDLXHZ7nvJ+bwtCgxYKroyCQuJ6X58AB
+7j3Xcy8vF4RM0UaJwyUVuRR0DZIYRi+MnLqLFo6LLLJwuLDNrllIMLk1lRR6DtP/
+ena2Z895Pr/v8/3+9rsYEWIKC8JuTnW2JgbMQT5vZ4Upf+/rr9RioiZ7MEstVgYX
+N1guQ5fbVqbKmAXDAYErUORoFigMQUOcpBUecjwJFFJmWAoAWpZYgpNYVuAgy7Ci
+wAOagkAWKElhZZyTKFzAzJiiOoqh7tRVhxvJCkCgaRx9AiHzoqSQFINLLEcTBKSh
+JHA8T1AKSUiosERzGRXInCi4YLKqoX/oYFu09z/8Y984kBgKJwiaISUcWWMJnBFl
+WeQgQyKYUyiFpUQOWWU4ATCAFUWW5gVCwBmSlwG6WPRdsSgHUFYZMAon0BLNMCzH
+0yxDsIClaYGRAW+ALqg7BDtEtFOFbqiXQLXULjiwOjOGripVCRrdNeI8wqqqqpLd
+ulqpCuWy6pK0Ch3lkzQ7EnPqmluTtHJElbjdTpfFUHF7nItlULQ9ErSJqkNGjUUV
+lVB3qZoDswBESm7VeAHQOGAByZKsGYPVTlWHNtUgkHcOR8t4B1Ya3SIBofAkhDyQ
+cZFXaEmQcV5ROMQRrKDwPMWiIZA4UqR4wBhNhLIikwpHSii9ghkRdzk0zMIgm0Ix
+knSpxQ7BXaFDrG7AW7jEFBRmWrY02Bg4U9gT0Y/HMMEcNb8hYdudJGn+o7bsxIcF
+g7HWlM2fZQ5sH0sJs/5w/Oj+ydfSrl/5MbTlWfr5ax1eT+ZUbvitBvji/lcDDbfH
+zgdCcqtimKIzES9fWKNF/bUxMX3f2lJS7M5JiwvOX+pPNIX/ff6XlW+/b9lZRlVZ
+ZrO9vjJz+KmCjDXL47jpyDvvZsz03exobD/c+efxjs91X2bbU9Up/Q3rMPH23RUx
+nvSR5jfaXb2mramhw8o301lKbtvuA6PfFrZMkhmr81PP9v7bVvBCn8W7atJ+Iva9
+7KJD9XzEcwPZm2pn57bGpx0rje8urH/Ss7DHWWcZX5k3kZbyva/t50vDX39Z5rPl
+tE9NL7ucMj+vVb0VkrXwZmNO+bq5g3/kJvs2jPVGjFzb9MX90DEqemZf3g5Fsj/d
+OTUomgB5wb154d6KnI/7TkyMdlhX93SYpOHdcv1J8aeaD79Sqsf3XMrfefH3LutE
+zFzY8iBcXzv98PDgkauDs3yw9YPkrGh/Tk2LvSsxLsB2jfa1+rdEvzO8LfKo594q
+c3zkg9qBc013BzO2nEw60sAc+u1KapEXvxGIooer06MeFBeu/64vwTNDxu7YfkZ9
+qel0Y3xSja/71OnmqKtpB4ryjo3M/jP0TJP/1/ufevce7A8UdU7fSt7o9+/q6V+S
+gMHZ8RufnPV4LzdnB7pah3qGklKtI9exBv85ev1/oujHdQ==
+=4ehU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pieterheijman
+
+==================================================================
