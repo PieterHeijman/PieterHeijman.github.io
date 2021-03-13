@@ -14,7 +14,7 @@ $font-scale: (
 body {
   font-family: 'Josefin Sans', Tahoma, Geneva, Verdana, sans-serif;
   font-size: calc(10px + 0.5vw);
-  color: rgba(map-get($colors, "white"), 0.9);
+  color: map-get($colors, "black");
   font-style: normal;
   font-feature-settings: "kern" 1,"liga" 1,"swsh" 1,"salt" 1;
   font-variant-numeric: oldstyle-nums;
@@ -26,13 +26,6 @@ body {
   @media (max-width: 640px) {
     font-size: calc(12px + 0.5vw);
   }
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: rgba(map-get($colors, "white"), 0.8);
 }
 
 h1 {

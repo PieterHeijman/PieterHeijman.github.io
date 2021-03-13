@@ -6,51 +6,42 @@ section.post-list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: stretch;
-    overflow-x: auto;
-    overflow-y: hidden;
+
+    @media (min-width: 1024px) {
+      flex-wrap: wrap;
+    }
 
     .post {
-      padding-top: $space-300;
-      padding-right: $space-300;
+      padding-top: $space-400;
+      padding-right: $space-400;
+      width: 25%;
+      max-width: 70vw;
 
       a {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        align-items: flex-start;
         text-decoration: none;
-        min-width: 400px;
-        max-width: 70vw;
+        width: 100%;
         padding: $space-300;
         position: relative;
-        background-image: linear-gradient( 105.3deg,  rgba(map-get($colors, "blue"),1) 21.8%, rgba(darken(map-get($colors, "blue"), 2%),1) 100.2% );
-        background-color: map-get($colors, "blue");
-
+        aspect-ratio: 1 / 1;
+        background-color: map-get($colors, "white");
+        transition: box-shadow 480ms linear;
+        box-shadow: 
+          0 0 15px -2px rgba(10,10,10,0.1),
+          0 0 65px -15px rgba(120,120,120,0.1),
+          0 0 75px -15px rgba(30,30,30,0.1);
+    
         &:active,
         &:hover,
         &:visited {
           text-decoration: none;
-        }
-
-        &::before {
-          content: "";
-          display: block;
-          position: absolute;
-          left: 6px;
-          top: 6px;
-          width: 5px;
-          height: 5px;
-          border-top: 1px solid map-get($colors, "light-blue");
-          border-left: 1px solid map-get($colors, "light-blue");
-        }
-        
-        &::after {
-          content: "";
-          display: block;
-          position: absolute;
-          right: 6px;
-          bottom: 6px;
-          width: 5px;
-          height: 5px;
-          border-bottom: 1px solid map-get($colors, "light-blue");
-          border-right: 1px solid map-get($colors, "light-blue");
+          box-shadow: 
+            0 0 5px -2px rgba(0,0,0,0.1),
+            0 0 21px -15px rgba(0,0,0,0.1),
+            0 0 25px -15px rgba(0,0,0,0.1);
         }
 
         .category {
