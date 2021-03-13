@@ -23,6 +23,11 @@ section.post-list {
       width: 25%;
       max-width: 70vw;
 
+      @media (max-width: 1024px) {
+        width: 300px;
+        min-width: 300px;
+      }
+
       a {
         display: flex;
         flex-direction: column;
