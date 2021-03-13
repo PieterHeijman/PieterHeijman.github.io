@@ -11,6 +11,12 @@ section.post-list {
       flex-wrap: wrap;
     }
 
+    @media (min-width: 1024px) {
+      overflow-x: visible;
+      overflow-y: visible;
+      flex-wrap: wrap;
+    }
+
     .post {
       padding-top: $space-400;
       padding-right: $space-400;
