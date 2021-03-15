@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+
+  .footer {
+    padding: $space-300;
+    background-color: lighten(map-get($colors, "black"), 70%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      max-width: $header-large;
+      height: 70px;
+    }
+
+    .social {
+      a {
+        text-decoration: none;
+        margin-left: $space-200;
+      }
+    }
+  }
+
+  .subfooter {
+    padding: $space-300;
+    background-color: map-get($colors, "black");
+
+    span {
+      color: map-get($colors, "white");
+    }
+
+    a {
+      color: map-get($colors, "white");
+    }
+  }
+}
