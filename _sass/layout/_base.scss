@@ -18,6 +18,10 @@ html {
       margin: 0;
       padding-left: $space-300;
       padding-right: $space-300;
+
+      @media (max-width: 1024px) {
+        width: calc(100vw);
+      }
     }
 
     section.block {
