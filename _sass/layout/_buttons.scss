@@ -3,7 +3,7 @@
   padding-bottom: 8px;
   padding-left: 32px;
   padding-right: 32px;
-  
+
   &.primary {
     background-color: map-get($colors, "bright-red");
     color: map-get($colors, "white");

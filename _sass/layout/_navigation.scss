@@ -21,6 +21,7 @@ section.header {
     @media (min-width: 1024px) {
       $scale : $header-large / $header-small;
       $shift : ($header-large - $header-small) / 2;
+
       transform: scale($scale) translateX($shift);
     }
   }
