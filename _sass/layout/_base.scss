@@ -14,6 +14,7 @@ html {
 
     section.content {
       width: calc(100vw - 2em);
+      min-height: calc(100vh - 282px);
       max-width: 1900px;
       margin: 0;
       padding-left: $space-300;
