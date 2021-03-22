@@ -3,7 +3,7 @@ footer {
 
   .subfooter {
     padding: $space-300;
-    background-color: map-get($colors, "black");
+    background-color: map-get($colors, "jungle-green");
 
     span {
       color: map-get($colors, "white");
@@ -16,7 +16,7 @@ footer {
 
   .footer {
     padding: $space-300;
-    background-color: lighten(map-get($colors, "black"), 70%);
+    background-color: map-get($colors, "white");
     display: flex;
     justify-content: space-between;
     align-items: center;
