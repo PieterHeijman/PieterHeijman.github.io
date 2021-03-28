@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description }}">
+
+  {% include critical-style.html %}
+
+  <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  {% include header.html %}
+  <section class="content">
+    {% include archive.html %}
+    {{ content }}
+  </section>
+  {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,8 @@
+<section class="block post-list">
+  <h2>All articles posted on Trivial Discourse</h2>
+  <ul class="latest-posts">
+    {% for post in site.posts %}
+      {% include list-post.html %}
+    {% endfor %}
+  </ul>
+</section>
