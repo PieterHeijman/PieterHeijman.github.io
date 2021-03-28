@@ -1,8 +1,13 @@
 <section class="block post-list">
   <h2>Latest posts</h2>
   <ul class="latest-posts">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:7 %}
       {% include list-post.html %}
     {% endfor %}
+    <li class="post-button">
+      <a class="item-inner dark" href="#">
+        <div>See all articles</div>
+      </a>
+    </li>
   </ul>
 </section>

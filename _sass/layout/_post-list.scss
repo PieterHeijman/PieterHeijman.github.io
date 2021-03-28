@@ -13,6 +13,7 @@ section.post-list {
       overflow-y: visible;
     }
 
+    .post-button,
     .post {
       padding-bottom: $space-400;
       padding-right: $space-400;
@@ -75,6 +76,19 @@ section.post-list {
           .date {
             color: map-get($colors, "white");
           }
+        }
+      }
+    }
+
+    .post-button {
+      a {
+        background-color: map-get($colors, "slate");
+        color: map-get($colors, "white");
+        align-items: flex-end;
+
+        div {
+          font-weight: 700;
+          color: map-get($colors, "white");
         }
       }
     }

@@ -1,22 +1,10 @@
 footer {
   width: 100%;
 
-  .subfooter {
-    padding: $space-300;
-    background-color: map-get($colors, "jungle-green");
-
-    span {
-      color: map-get($colors, "white");
-    }
-
-    a {
-      color: map-get($colors, "white");
-    }
-  }
-
   .footer {
     padding: $space-300;
-    background-color: map-get($colors, "white");
+    background-color: map-get($colors, "slate");
+    color: map-get($colors, "white");
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,10 +14,40 @@ footer {
       height: 70px;
     }
 
-    .social {
+    .links {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .title {
+        color: map-get($colors, "white");
+        font-weight: 700;
+        margin-bottom: $space-200;
+      }
+
+      .copyrights,
       a {
-        text-decoration: none;
-        margin-left: $space-200;
+        color: map-get($colors, "white");
+      }
+
+      .legal {
+        margin-left: $space-500;
+      }
+
+      .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .icons {
+          margin-left: -5px;
+        }
+
+        a {
+          text-decoration: none;
+          margin-left: $space-200;
+        }
       }
     }
   }
