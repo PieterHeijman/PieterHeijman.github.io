@@ -9,6 +9,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .logo {
       max-width: $header-large;
       height: 70px;
@@ -19,19 +23,40 @@ footer {
       justify-content: flex-start;
       align-items: flex-start;
 
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .title {
         color: map-get($colors, "white");
         font-weight: 700;
         margin-bottom: $space-200;
+
+        @media (max-width: 1024px) {
+          font-size: map-get($font-scale, 500);
+          line-height: 2.2;
+        }
       }
 
       .copyrights,
       a {
         color: map-get($colors, "white");
+        line-height: 1.8;
+
+        @media (max-width: 1024px) {
+          font-size: map-get($font-scale, 500);
+          line-height: 2.2;
+        }
       }
 
       .legal {
         margin-left: $space-500;
+
+        @media (max-width: 1024px) {
+          text-align: center;
+          margin-left: $space-none;
+        }
       }
 
       .social {
@@ -39,6 +64,11 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+
+
+        @media (max-width: 1024px) {
+          align-items: center;
+        }
 
         .icons {
           margin-left: -5px;
