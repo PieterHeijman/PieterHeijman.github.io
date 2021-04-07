@@ -5,10 +5,22 @@
   color: map-get($colors, "white");
 
   .person {
-    flex-basis: calc(66.6666666% - #{$space-300});
+    flex-basis: calc(75%);
     background-color: map-get($colors, "slate");
-    padding: $space-500;
+    padding: $space-400;
     margin-right: $space-400;
+    display: flex;
+    justify-content: flex-start;
+
+    .avatar {
+      min-width: 128px;
+      width: 128px;
+      min-height: 128px;
+      height: 128px;
+      border-radius: 64px;
+      overflow: hidden;
+      margin: $space-300;
+    }
 
     .personalia {
       margin-bottom: $space-400;
@@ -16,8 +28,10 @@
 
     .title,
     .since,
+    .tool-title,
     h3 {
       color: map-get($colors, "white");
+      margin-bottom: $space-200;
     }
 
     .title {
@@ -32,13 +46,22 @@
     .icon {
       width: 32px;
       height: 32px;
-      margin-right: $space-300;
+      margin: $space-100;
+
+      &:first-child {
+        margin-left: $space-none;
+      }
     }
   }
 
   .art {
-    flex-basis: 33.3333333%;
+    flex-basis: calc(25% - #{$space-300});
     background-color: map-get($colors, "slate");
     padding: $space-300;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
