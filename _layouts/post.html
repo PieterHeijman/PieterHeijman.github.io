@@ -10,6 +10,14 @@
   <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
   <title>{{ page.title }}</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50594599-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-50594599-1');
+  </script>
 </head>
 <body>
   {% include header.html %}
