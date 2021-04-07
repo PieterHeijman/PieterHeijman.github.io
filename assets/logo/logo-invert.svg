@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo-white.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -53,7 +53,7 @@
      id="layer1"
      transform="translate(-12.607461,-87.408957)">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:#262626;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect839"
        width="17.504278"
        height="17.126307"
@@ -68,7 +68,7 @@
        y="79.941963" />
     <text
        xml:space="preserve"
-       style="font-size:19.7556px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:Assistant;letter-spacing:-1.21708px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-size:19.7556px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:Assistant;letter-spacing:-1.21708px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;"
        x="13.380359"
        y="102.73394"
        id="text14"><tspan
@@ -76,11 +76,11 @@
          id="tspan12"
          x="13.380359"
          y="102.73394"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:19.7556px;font-family:Assistant;-inkscape-font-specification:'Assistant Semi-Bold';letter-spacing:-1.21708px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:19.7556px;font-family:Assistant;-inkscape-font-specification:'Assistant Semi-Bold';letter-spacing:-1.21708px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
          dx="0">td</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:12.0016px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:Assistant;fill:#262626;fill-opacity:1;stroke-width:0.300041"
+       style="font-size:12.0016px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:Assistant;fill:#ffffff;fill-opacity:1;stroke-width:0.300041;"
        x="30.359608"
        y="97.761063"
        id="text847"
@@ -89,10 +89,10 @@
          id="tspan845"
          x="30.359608"
          y="97.761063"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Assistant;-inkscape-font-specification:'Assistant Semi-Bold';letter-spacing:1.24883px;fill:#262626;fill-opacity:1;stroke-width:0.300041">TRIVIAL</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Assistant;-inkscape-font-specification:'Assistant Semi-Bold';letter-spacing:1.24883px;fill:#ffffff;fill-opacity:1;stroke-width:0.300041;">TRIVIAL</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:'Assistant Ultra-Light';fill:#262626;fill-opacity:1;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Assistant;-inkscape-font-specification:'Assistant Ultra-Light';fill:#ffffff;fill-opacity:1;stroke-width:0.264583;"
        x="31.050747"
        y="103.96236"
        id="text851"><tspan
@@ -100,6 +100,6 @@
          id="tspan849"
          x="31.050747"
          y="103.96236"
-         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-family:Assistant;-inkscape-font-specification:'Assistant Ultra-Light';letter-spacing:0.85725px;fill:#262626;fill-opacity:1;stroke-width:0.264583">discourse</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-family:Assistant;-inkscape-font-specification:'Assistant Ultra-Light';letter-spacing:0.85725px;fill:#ffffff;fill-opacity:1;stroke-width:0.264583;">discourse</tspan></text>
   </g>
 </svg>

@@ -1,21 +1,20 @@
 footer {
   width: 100%;
-
+  background-color: map-get($colors, "slate");
+    
   .footer {
     padding: $space-300;
-    background-color: map-get($colors, "slate");
     color: map-get($colors, "white");
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    width: calc(100vw - 2em);
+    max-width: 1900px;
+    margin: 0;
 
     @media (max-width: 1024px) {
       flex-direction: column;
-    }
-
-    .logo {
-      max-width: $header-large;
-      height: 70px;
+      width: calc(100vw);
     }
 
     .links {
@@ -65,9 +64,16 @@ footer {
         justify-content: flex-start;
         align-items: flex-start;
 
-
         @media (max-width: 1024px) {
           align-items: center;
+        }
+  
+        .logo {
+          max-width: $header-large;
+          height: 33px;
+          margin-left: 0;
+          margin-bottom: $space-300;
+          margin-top: 2px;
         }
 
         .icons {

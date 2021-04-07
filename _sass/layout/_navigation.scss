@@ -1,10 +1,9 @@
 section.header {
-  width: 100%;
-  max-width: 100%;
-  min-width: 100%;
+  width: calc(100vw - 2em);
+  max-width: 1900px;
   height: $header-small;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: $space-300;
+  padding-right: $space-300;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,16 +12,13 @@ section.header {
   @media (min-width: 1024px) {
     height: 120px;
   }
+  
+  @media (max-width: 1024px) {
+    width: calc(100vw);
+  }
 
   .logo {
     max-width: $header-large;
-    height: 70px;
-
-    @media (min-width: 1024px) {
-      $scale : $header-large / $header-small;
-      $shift : ($header-large - $header-small) / 2;
-
-      transform: scale($scale) translateX($shift);
-    }
+    height: 33px;
   }
 }

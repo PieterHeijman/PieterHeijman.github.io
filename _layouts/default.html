@@ -8,6 +8,8 @@
   {% include critical-style.html %}
 
   <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/assets/fonts/assistant/Assistant-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/noto/NotoSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
   <title>{{ page.title }}</title>
 </head>
@@ -15,6 +17,7 @@
   {% include header.html %}
   <section class="content">
     {% include latest.html %}
+    {% include aboutme.html %}
     {{ content }}
   </section>
   {% include footer.html %}

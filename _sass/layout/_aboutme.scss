@@ -1,0 +1,44 @@
+.aboutme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  color: map-get($colors, "white");
+
+  .person {
+    flex-basis: calc(66.6666666% - #{$space-300});
+    background-color: map-get($colors, "slate");
+    padding: $space-500;
+    margin-right: $space-400;
+
+    .personalia {
+      margin-bottom: $space-400;
+    }
+
+    .title,
+    .since,
+    h3 {
+      color: map-get($colors, "white");
+    }
+
+    .title {
+      font-weight: 700;
+    }
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      margin-right: $space-300;
+    }
+  }
+
+  .art {
+    flex-basis: 33.3333333%;
+    background-color: map-get($colors, "slate");
+    padding: $space-300;
+  }
+}
