@@ -18,6 +18,7 @@
 
     gtag('config', 'UA-50594599-1');
   </script>
+  <script src="/assets/scripts/external.js"></script>
 </head>
 <body>
   {% include header.html %}
@@ -25,8 +26,10 @@
     <h1>{{ page.title }}</h1>
     <div class="post-meta">{{ page.date | date: "%-d %B %Y" }}&nbsp;&mdash;&nbsp;{{ page.author }}</div>
     <article>
-      {{ content }}
+      {{ content }}  
     </article>
+    {% include aboutme.html %}
   </section>
+  {% include footer.html %}
 </body>
 </html>

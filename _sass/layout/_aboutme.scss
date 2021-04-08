@@ -4,6 +4,10 @@
   align-items: stretch;
   color: map-get($colors, "white");
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   .person {
     flex-basis: calc(75%);
     background-color: map-get($colors, "slate");
@@ -11,6 +15,12 @@
     margin-right: $space-400;
     display: flex;
     justify-content: flex-start;
+    
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+      margin-right: $space-none;
+      flex-direction: column;
+    }
 
     .avatar {
       min-width: 128px;
@@ -20,6 +30,11 @@
       border-radius: 64px;
       overflow: hidden;
       margin: $space-300;
+      
+      @media (max-width: 1024px) {
+        margin-left: $space-none;
+        margin-right: $space-none;
+      }
     }
 
     .personalia {
@@ -55,9 +70,13 @@
   }
 
   .art {
-    flex-basis: calc(25% - #{$space-300});
+    flex-basis: calc(25% - #{($space-400 * 3) / 4});
     background-color: map-get($colors, "slate");
     padding: $space-300;
+
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+    }
 
     img {
       width: 100%;
