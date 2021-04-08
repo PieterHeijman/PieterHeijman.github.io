@@ -1,3 +1,20 @@
-language: node_js
-node_js:
-  - "6.5.0"
+language: ruby
+rvm:
+  - 2.6.3
+
+# Assume bundler is being used, therefore
+script: bundle exec jekyll build
+
+branches:
+  only:
+  - main
+
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
+
+cache: bundler # caching bundler gem packages will speed up build
+
+notifications:
+  email: false
