@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ page.description }}">
 
   {% include critical-style.html %}
+
+  <title>{{ page.title }}</title>
+  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trivialdiscourse.com/">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+  <meta property="og:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.trivialdiscourse.com/">
+  <meta property="twitter:title" content="{{ page.title }}">
+  <meta property="twitter:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+  <meta property="twitter:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
 
   <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="/assets/fonts/assistant/Assistant-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/assets/fonts/noto/NotoSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
-  <title>{{ page.title }}</title>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50594599-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

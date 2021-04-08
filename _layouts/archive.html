@@ -7,6 +7,22 @@
 
   {% include critical-style.html %}
 
+  <title>Trivial Discourse - {{ page.title }}</title>
+  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trivialdiscourse.com/">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+  <meta property="og:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.trivialdiscourse.com/">
+  <meta property="twitter:title" content="{{ page.title }}">
+  <meta property="twitter:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, and more.">
+  <meta property="twitter:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
+
   <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
   <title>{{ page.title }}</title>
