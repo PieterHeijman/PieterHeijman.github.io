@@ -23,6 +23,11 @@ html {
       @media (max-width: 1024px) {
         width: calc(100vw);
       }
+
+      article {
+        width: 100%;
+        max-width: 95ch;
+      }
     }
 
     section.block {
