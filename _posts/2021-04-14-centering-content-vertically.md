@@ -8,7 +8,7 @@ category: Front-end development
 
 ## **Introduction**
 
-When it comes to front-end development, any problem can be solved in a million ways. Today I want to focus on the seemingly simple task of aligning content vertically. There are a few good ways to do this, there are also a few ways that you should maybe avoid. Most solutions are useful in some situations, but inappropriate in others.  Below I've listed some of the ways you can vertically align content and the situation where that solution is appropriate.
+When it comes to front-end development, any problem has a million solutions. Today I want to focus on the seemingly simple task of aligning content vertically. There are a few good ways to do this, there are also many dirty tricks and filthy hacks. Even most of the good solutions may be very useful in some situations but inappropriate in others. Below I've listed some of the ways you can vertically align content and the situation where that solution is appropriate.
 
 ## **Vertical-align**
 
@@ -39,15 +39,15 @@ Let's look at the following example. We have a wrapper element with two child el
 
 The result of this code would be two vertically centered pieces of text next to each other. 
 
-Note that the wrapper has been set to an `inline-block`. This is because `vertical align` only works along a baseline. This means it only works on inline elements (basically, anything with its display property set to `inline` or `inline-block` and table cells). 
+Note that the wrapper is set to an `inline-block`. `Vertical-align` only works along a baseline. This means it only works on inline elements (basically, anything with its display property set to `inline` or `inline-block` and table-cells). 
 
 This also means that setting a height to the wrapper `div` won't change the results. The centering happens along the content's baseline, which still runs in the same place, regardless of the parent's height. This makes `vertical-align` fairly limited. 
 
-The best use-cases for `vertical-align` are situations where you have multiple elements on a single line of text that you wan to center. For instance an icon in front of a line of text, or several images next to each other. 
+The best use-cases for `vertical-align` are situations where you have multiple elements on a single line of text that you want to center. For instance, when showing an icon in front of a line of text. 
 
 ## **Absolute positioning and translate**
 
-In the surface this solution feels a little hacky, but it is more flexible than `vertical-align`. It is also a solution you will find a lot in the wild, since it works in most situations. Let's look at an example.
+On the surface, this solution feels a little hacky, but it is more flexible than `vertical-align`. It is also a solution you will find a lot in the wild since it works in most situations. Let's look at an example.
 
 ```html
 <div class="wrapper">
@@ -70,7 +70,7 @@ In the surface this solution feels a little hacky, but it is more flexible than 
 }
 ```
 
-First, our parent element needs some positioning set to it, in our example we set it to position `relative`, but it will work just as well with for instance `absolute` positioning. Our child element gets an `absolute` position and a top of 50%. This positions the element halfway down the parent element. But this is too far down, since our child also has a height of its own. That's why we give the child element a `transform`. We set it to translate 50% back up. This puts our element perfectly centered. This works because `top` is based on the nearest parent with positioning, but `translate` is based on the element itself.
+First, our parent element needs some positioning set to it, in our example we set it to position `relative`, but it will work just as well with for instance `absolute` positioning. Our child element gets an `absolute` position and a top of 50%. This positions the element halfway down the parent element. But this is too far down since our child also has a height of its own. That's why we give the child element a `transform`. We set it to translate 50% back up. This puts our element perfectly centered. This works because `top` is based on the nearest parent with positioning, but `translate` is based on the element itself.
 
 On the face of it, this solution will work in pretty much any situation you throw at it. There are of course a few obvious exceptions. If the child element, for instance, has a fixed height smaller than its content, the overflow will cause the content to not be centered.
 
@@ -78,7 +78,7 @@ There is also the problem of the child being set to position `absolute`. This, f
 
 ## **Flexbox**
 
-Flexboxes are one of the most powerful tools for aligning content and it can handle vertical centering quite easily. Like the previous example, it also works in most situations. Let's, for example, say we have a `div` with some height and inside it a child `div` that needs to be centered. 
+Flexboxes are one of the most powerful tools for aligning content and they can handle vertical centering quite easily. Let's not beat around the bush, if it's not already, flexbox should be one of your power tools when it comes to aligning content. Let's look at an example. 
 
 ```html
 <div class="wrapper">
@@ -97,10 +97,10 @@ The below CSS would be enough to center that child element vertically.
 
 Regardless of the height of our wrapper, the flex `align-items` will make sure our child is nicely centered.
 
-This solution has the some of the same problems as the previous solution. But flexbox can handle multiple children and offers a lot of options to tweak any other issue you may run into.  
+This solution has some of the same problems as the previous solution. But flexbox can handle multiple children and offers a lot of options to tweak any other issue you may run into.  
 
 ## **Just for the record: using line-height and floating divs**
 
-This in no way should be your go-to, however for completeness it is possible in some situations to use line-height to center content vertically. Mostly, this works in elements where you have just a single line of text (like buttons). In the situations where you could use line-height, however, the flexbox and position absolute solutions will also work.
+This in no way should be your go-to, however, for completeness, it is possible in some situations to use line-height to center content vertically. Mostly, this works in elements where you have just a single line of text (like buttons). In the situations where you could use line-height, however, the flexbox and position absolute solutions will also work.
 
 There's also an older solution that sometimes pops up in the wild using a floating `div` to push content halfway down a parent. But this solution has more than a few problems. For one it is not very precise. Chances are, your child element is aligned close to the center. Rather than perfectly centered. It also has comparatively much overhead. It needs an extra empty element whose function is purely to align the other elements, and there's a bunch of extra CSS code needed to make this work.
