@@ -4,6 +4,7 @@ title: Centering content vertically
 date: 2021-04-14
 author: Pieter Heijman
 category: Front-end development
+read-time: 4 min
 ---
 
 ## **Introduction**
@@ -27,10 +28,6 @@ Let's look at the following example. We have a wrapper element with two child el
 ```
 
 ```css
-.wrapper {
-  display: inline-block;
-}
-
 .child {
   display: inline-block;
   vertical-align: middle;
@@ -39,7 +36,7 @@ Let's look at the following example. We have a wrapper element with two child el
 
 The result of this code would be two vertically centered pieces of text next to each other. 
 
-Note that the wrapper is set to an `inline-block`. `Vertical-align` only works along a baseline. This means it only works on inline elements (basically, anything with its display property set to `inline` or `inline-block` and table-cells). 
+Note that the child is set to an `inline-block`. `Vertical-align` only works along a baseline. This means it only works on inline elements (basically, anything with its display property set to `inline` or `inline-block` and table-cells). 
 
 This also means that setting a height to the wrapper `div` won't change the results. The centering happens along the content's baseline, which still runs in the same place, regardless of the parent's height. This makes `vertical-align` fairly limited. 
 
