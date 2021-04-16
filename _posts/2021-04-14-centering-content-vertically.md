@@ -9,7 +9,7 @@ read-time: 4 min
 
 ## **Introduction**
 
-When it comes to front-end development, any problem has a million solutions. Today I want to focus on the seemingly simple task of aligning content vertically. There are a few good ways to do this, there are also many dirty tricks and filthy hacks. Even most of the good solutions may be very useful in some situations but inappropriate in others. Below I've listed some of the ways you can vertically align content and the situation where that solution is appropriate.
+When it comes to front-end development, any problem has a million solutions. Today I want to focus on the seemingly simple task of aligning content vertically. There are a few good ways to do this. There are also many dirty tricks and filthy hacks. Even the good solutions may be very useful in some situations but inappropriate in others. Below I've listed some of the ways you can vertically align content and the situation where that solution is appropriate.
 
 ## **Vertical-align**
 
@@ -36,15 +36,15 @@ Let's look at the following example. We have a wrapper element with two child el
 
 The result of this code would be two vertically centered pieces of text next to each other. 
 
-Note that the child is set to an `inline-block`. `Vertical-align` only works along a baseline. This means it only works on inline elements (basically, anything with its display property set to `inline` or `inline-block` and table-cells). 
+Note that the child is set to an `inline-block`. `Vertical-align` only works along a baseline. This means it only works on inline elements. Basically, anything with its display property set to `inline` or `inline-block` and table-cells. 
 
 This also means that setting a height to the wrapper `div` won't change the results. The centering happens along the content's baseline, which still runs in the same place, regardless of the parent's height. This makes `vertical-align` fairly limited. 
 
-The best use-cases for `vertical-align` are situations where you have multiple elements on a single line of text that you want to center. For instance, when showing an icon in front of a line of text. 
+The best use-cases for `vertical-align` are situations where you have multiple elements on a single line. For instance, when showing an icon in front of a line of text. 
 
 ## **Absolute positioning and translate**
 
-On the surface, this solution feels a little hacky, but it is more flexible than `vertical-align`. It is also a solution you will find a lot in the wild since it works in most situations. Let's look at an example.
+On the surface, this solution feels a little hacky. It is, however, more flexible than `vertical-align`. It is also a solution you will find a lot in the wild since it works in most situations. Let's look at an example.
 
 ```html
 <div class="wrapper">
@@ -67,7 +67,7 @@ On the surface, this solution feels a little hacky, but it is more flexible than
 }
 ```
 
-First, our parent element needs some positioning set to it, in our example we set it to position `relative`, but it will work just as well with for instance `absolute` positioning. Our child element gets an `absolute` position and a top of 50%. This positions the element halfway down the parent element. But this is too far down since our child also has a height of its own. That's why we give the child element a `transform`. We set it to translate 50% back up. This puts our element perfectly centered. This works because `top` is based on the nearest parent with positioning, but `translate` is based on the element itself.
+First, our parent element needs some positioning set to it. In our example, we set it to position `relative`, but it will work just as well with for instance `absolute` positioning. Our child element gets an `absolute` position and a top of 50%. This positions the element halfway down the parent element. But this is too far down since our child also has a height of its own. That's why we give the child element a `transform`. We set it to translate 50% back up. This puts our element perfectly centered. This works because `top` is based on the nearest parent with positioning, but `translate` is based on the element itself.
 
 On the face of it, this solution will work in pretty much any situation you throw at it. There are of course a few obvious exceptions. If the child element, for instance, has a fixed height smaller than its content, the overflow will cause the content to not be centered.
 
