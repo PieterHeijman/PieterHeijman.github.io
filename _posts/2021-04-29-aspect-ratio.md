@@ -5,6 +5,8 @@ date: 2021-04-29
 author: Pieter Heijman
 category: Front-end development
 read-time: 3 min
+image: /assets/images/placeholder.jpg
+image-style: dark
 ---
 
 Don't you just love it when this happens? The designer sent you their work and it relies heavily on elements being perfectly square. You try to remember the trick for this. It's kind of hacky, but there's no real better way. Not unless you just set a fixed width and height. You glance at the designer, they give you a stern look back. Can't set a fixed width and height. Time to break out the old hack.
