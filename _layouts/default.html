@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% include head.html %}
+  {% include critical-style.html %}
 
-  <body class="{{page.category}}">
-    {% include nav.html %}
-    
-    <main>
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </main>
+  <title>{{ page.title }}</title>
+  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, creative coding, and more.">
 
-    {% include footer.html %}
-  </body>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trivialdiscourse.com/">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, creative coding, and more.">
+  <meta property="og:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
 
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.trivialdiscourse.com/">
+  <meta property="twitter:title" content="{{ page.title }}">
+  <meta property="twitter:description" content="Trivial Discourse - Articles, tutorials, tips and tricks about web development, generative art, creative coding, and more.">
+  <meta property="twitter:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
+
+  <meta name="apple-mobile-web-app-title" content="Trivial Discourse" />
+  <meta name="application-name" content="Trivial Discourse" />
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#305251" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/fav-180.png" />
+  <link rel="manifest" href="/assets/favicon/manifest.json" />
+  <link rel="icon" type="image/png" href="/assets/favicon/fav-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/favicon/fav-16.png" sizes="16x16" />
+
+  <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="/assets/fonts/assistant/Assistant-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/fonts/noto/NotoSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50594599-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-50594599-1');
+  </script>
+  <script src="/assets/scripts/external.js" defer></script>
+</head>
+<body>
+  {% include header.html %}
+  <section class="content">
+    {% include latest.html %}
+    {% include aboutme.html %}
+    {{ content }}
+  </section>
+  {% include footer.html %}
+</body>
 </html>

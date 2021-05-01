@@ -1,50 +1,67 @@
----
-layout: default
----
-<article>
-  <div class="content-head">
-    <nav>
-      <a class="logo smallcaps" href="/">
-        <strong>Trivial</strong>Discourse
-      </a>
-    </nav>
-    <h1 class="title">
-      {{ page.title }}<br>
-    </h1>
-    <h2 class="title">{{ page.subtitle }}</h2>
-    <div class="subtitle">
-      <p>
-      Written by <a href="https://ko-fi.com/M4M07KBW" target="_blank" rel="noopener">me</a>,<br>
-      {{ page.readableDate }}
-      </p>
-      <p>
-        <a href="https://ko-fi.com/pieter" target="_blank" rel="noopener">
-          If you enjoy Trivial Discourse, please consider supporting me.
-        </a>
-      </p>
-      <a rel="noopener license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">cc-by-nc-sa</a>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% include critical-style.html %}
+
+  <title>Trivial Discourse - {{ page.title }}</title>
+  <meta name="title" content="{{ page.title }}">
+  <meta name="description" content="Trivial Discourse - {{ page.description }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.trivialdiscourse.com/">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="Trivial Discourse - {{ page.description }}">
+  <meta property="og:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.trivialdiscourse.com/">
+  <meta property="twitter:title" content="{{ page.title }}">
+  <meta property="twitter:description" content="Trivial Discourse - {{ page.description }}">
+  <meta property="twitter:image" content="https://www.trivialdiscourse.com/assets/images/down-in-the-river-detail.jpg">
   
-  <div class="main-content">
-  {{ content }}
-  </div>
-</article>
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "NewsArticle",
-    "headline": "{{ page.title }} ",
-    "datePublished": "{{ page.sitemap.lastmod | date_to_xmlschema }}",
-    "dateModified": "{{ page.sitemap.lastmod | date_to_xmlschema }}",
-    "author": {
-      "@type": "Person",
-      "name": "Pieter Heijman"
-    },
-     "publisher": {
-      "@type": "Organization",
-      "name": "Trivial Discourse"
-    },
-    "description": "{{ page.title }} {{ page.subtitle }}"
-  }
-</script>  
+  <meta name="apple-mobile-web-app-title" content="Trivial Discourse" />
+  <meta name="application-name" content="Trivial Discourse" />
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#305251" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/fav-180.png" />
+  <link rel="manifest" href="/assets/favicon/manifest.json" />
+  <link rel="icon" type="image/png" href="/assets/favicon/fav-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/favicon/fav-16.png" sizes="16x16" />
+
+  <link rel="preload" href="/assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/assets/css/style.css"></noscript>
+  <title>{{ page.title }}</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50594599-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-50594599-1');
+  </script>
+  <script src="/assets/scripts/external.js" defer></script>
+</head>
+<body>
+  {% include header.html %}
+  <section class="content">
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">{{ page.date | date: "%-d %B %Y" }}&nbsp;&mdash;&nbsp;{{ page.author }}</div>
+    <div class="read-time">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 7H11V12H16V14H9V7Z" fill="currentColor" />
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12Z" fill="currentColor"/>
+      </svg>
+      &nbsp;
+      {{ page.read-time }}
+    </div>
+    <article>
+      {{ content }}  
+    </article>
+    {% include aboutme.html %}
+  </section>
+  {% include footer.html %}
+</body>
+</html>

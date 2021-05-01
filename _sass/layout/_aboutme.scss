@@ -1,0 +1,86 @@
+.aboutme {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  color: map-get($colors, "white");
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .person {
+    flex-basis: calc(75%);
+    background-color: map-get($colors, "slate");
+    padding: $space-400;
+    margin-right: $space-400;
+    display: flex;
+    justify-content: flex-start;
+    
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+      margin-right: $space-none;
+      flex-direction: column;
+    }
+
+    .avatar {
+      min-width: 128px;
+      width: 128px;
+      min-height: 128px;
+      height: 128px;
+      border-radius: 64px;
+      overflow: hidden;
+      margin: $space-300;
+      
+      @media (max-width: 1024px) {
+        margin-left: $space-none;
+        margin-right: $space-none;
+      }
+    }
+
+    .personalia {
+      margin-bottom: $space-400;
+    }
+
+    .title,
+    .since,
+    .tool-title,
+    h3 {
+      color: map-get($colors, "white");
+      margin-bottom: $space-200;
+    }
+
+    .title {
+      font-weight: 700;
+    }
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      margin: $space-100;
+
+      &:first-child {
+        margin-left: $space-none;
+      }
+    }
+  }
+
+  .art {
+    flex-basis: calc(25% - #{($space-400 * 3) / 4});
+    background-color: map-get($colors, "slate");
+    padding: $space-300;
+
+    @media (max-width: 1024px) {
+      flex-basis: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

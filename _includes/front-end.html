@@ -1,0 +1,10 @@
+<section class="block post-list">
+  <h2>Front-end Development</h2>
+  <ul class="latest-posts">
+    {% for post in site.posts %}
+      {% if post.category == 'Front-end development' %}
+        {% include list-post.html %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>

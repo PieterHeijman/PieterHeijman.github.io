@@ -1,0 +1,24 @@
+section.header {
+  width: calc(100vw - 2em);
+  max-width: 1900px;
+  height: $header-small;
+  padding-left: $space-300;
+  padding-right: $space-300;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 900;
+
+  @media (min-width: 1024px) {
+    height: 120px;
+  }
+  
+  @media (max-width: 1024px) {
+    width: calc(100vw);
+  }
+
+  .logo {
+    max-width: $header-large;
+    height: 33px;
+  }
+}
