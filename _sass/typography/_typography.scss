@@ -6,6 +6,7 @@ body {
   font-style: normal;
   font-feature-settings: "kern" 1, "liga" 1, "swsh" 1, "salt" 1;
   font-variant-numeric: oldstyle-nums;
+  line-height: 1.4;
 
   @media (min-width: 1900px) {
     font-size: calc(14px + 0.2vw);
@@ -42,4 +43,8 @@ h4 {
 
 strong {
   font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }
