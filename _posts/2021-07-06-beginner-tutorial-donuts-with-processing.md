@@ -8,7 +8,7 @@ read-time: 15 min
 image: /assets/images/beginner-tutorial-donuts-with-processing/4.png
 image-style: dark
 ---
-P
+
 The best way to learn how to use a new programming tool is to make something practical. And what's more practical than a donut. Sure, as food donuts are empty calories and **lots** of sugar. But, from a drawing perspective, donuts require several different techniques.
 
 For this tutorial, we're going to be using Processing. So, before we get going, make sure you have downloaded [Processing](https://processing.org/download/). The coding we're going to be doing isn't super complex, so you should be able to follow along, regardless of your programming skills.
