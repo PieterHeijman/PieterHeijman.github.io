@@ -21,7 +21,7 @@ Any article I've read about Copilot seems to have this question in it. Since it 
 
 So, let's look at some situations where Github Copilot does best. Let's say, you've written this line of code. (the world can never have enough functions to add to numbers together, right?):
 
-```Javascript
+```javascript
 function sum(a, b) {
 ```
 
@@ -29,7 +29,7 @@ Github Copilot has no problems completing that function for you. And the same go
 
 It's also pretty good at completing repetitive stuff, if it sees a few examples. A good example is in constructor functions where a set of parameters are passed.
 
-```Javascript
+```javascript
 class Trex {
     constructor(name, color, size, weight, armlength) {
         this.name = name;
