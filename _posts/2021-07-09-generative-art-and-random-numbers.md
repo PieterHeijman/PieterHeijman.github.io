@@ -3,7 +3,7 @@ layout: post
 title: "Generative art and random numbers"
 date: 2021-05-19
 author: Pieter Heijman
-category: Generative Art
+category: Tutorial
 read-time: 5 min
 image: /assets/images/placeholder.jpg
 image-style: dark

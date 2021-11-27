@@ -1,9 +1,9 @@
-<section class="block post-list">
+<section class="block post-list art-list">
   <h2>Generative Art</h2>
-  <ul class="latest-posts">
+  <ul class="art-posts">
     {% for post in site.posts %}
       {% if post.category == 'Generative Art' %}
-        {% include list-post.html %}
+        {% include list-art.html %}
       {% endif %}
     {% endfor %}
   </ul>

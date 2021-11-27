@@ -4,8 +4,33 @@ section.post-list {
     padding: $space-none;
     padding-bottom: $space-200;
     display: flex;
-    flex-wrap: wrap;
+    gap: $space-400;
+    flex-wrap: nowrap;
     justify-content: stretch;
+    overflow-x: auto;
+    overflow-y: visible;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-left: -#{$space-400};
+    padding-left: $space-400;
+
+    @media (max-width: 1024px) {
+      margin-right: -#{$space-300};
+    }
+
+    &.latest-posts {
+      :nth-child(1n+7) {
+        display: none;
+
+        &.post-button {
+          display: block;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
     
     @media (min-width: 1024px) {
       flex-wrap: wrap;
@@ -16,7 +41,6 @@ section.post-list {
     .post-button,
     .post {
       padding-bottom: $space-400;
-      margin-right: $space-400;
       width: calc(25% - #{($space-400 * 3) / 4});
       max-width: 70vw;  
       opacity: 0;
@@ -25,6 +49,10 @@ section.post-list {
       animation-duration: 960ms;
       animation-delay: 100ms;
       animation-fill-mode: forwards;
+
+      @media (min-width: 1024px) {
+        padding-bottom: 0;
+      }
 
       &:nth-child(1) {
         animation-delay: 200ms;
@@ -57,43 +85,43 @@ section.post-list {
       &:nth-child(8) {
         animation-delay: 900ms;
       }
-
-      &:nth-child(4n) {
-        margin-right: $space-none;
-      }
       
       @media (max-width: 1024px) {
-        width: 100%;
-        min-width: 100%;
+        width: 80%;
+        min-width: 80%;
         padding-right: $space-none;
+  
+        &:last-child {
+          margin-right: $space-300;
+        }
       }
 
       a {
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         width: 100%;
         padding: $space-300;
         position: relative;
         aspect-ratio: 1 / 1;
-        background-color: map-get($colors, "white");
         background-size: cover;
-        transition: box-shadow 480ms linear;
-        box-shadow: 0 0 15px -2px rgba(50, 10, 10, 0.1), 0 0 65px -15px rgba(120, 120, 120, 0.1), 0 0 75px -15px rgba(30, 30, 30, 0.1);
+        background-color: map-get($colors, "white");
+        border: 1px solid map-get($colors, "starless-sky");
+        text-align: center;
 
         &:active,
         &:hover,
         &:visited {
           text-decoration: none;
-          box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.1), 0 0 21px -15px rgba(0, 0, 0, 0.1), 0 0 25px -15px rgba(0, 0, 0, 0.1);
         }
 
         h3 {
           font-weight: 275;
-          
-          text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);          
+          color: map-get($colors, "slate");
+          margin-top: 0;
         }
 
         .category {
@@ -102,18 +130,11 @@ section.post-list {
 
         .date,
         .category {
-          color: map-get($colors, "black");
+          color: map-get($colors, "slate");
         }
 
         &.dark {
           color: map-get($colors, "white");
-          box-shadow: 0 0 15px -2px rgba(50, 10, 10, 0.3), 0 0 65px -15px rgba(120, 120, 120, 0.3), 0 0 75px -15px rgba(30, 30, 30, 0.3);
-
-          &:active,
-          &:hover,
-          &:visited {
-            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3), 0 0 21px -15px rgba(0, 0, 0, 0.3), 0 0 25px -15px rgba(0, 0, 0, 0.3);
-          }
 
           h3,
           .category,
@@ -127,13 +148,23 @@ section.post-list {
 
     .post-button {
       a {
-        background-color: map-get($colors, "slate");
+        background-color: map-get($colors, "starless-sky");
         color: map-get($colors, "white");
         align-items: flex-end;
 
         div {
           font-weight: 700;
           color: map-get($colors, "white");
+        }
+      }
+    }
+  }
+
+  &.art-list {
+    ul {
+      .post {
+        a {
+          border: 0;
         }
       }
     }

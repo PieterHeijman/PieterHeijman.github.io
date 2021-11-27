@@ -3,7 +3,7 @@ layout: post
 title: "Beginner tutorial: Donuts with Processing"
 date: 2021-05-17
 author: Pieter Heijman
-category: Generative Art
+category: Tutorial
 read-time: 15 min
 image: /assets/images/beginner-tutorial-donuts-with-processing/4.png
 image-style: dark
