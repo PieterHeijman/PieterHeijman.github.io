@@ -13,8 +13,9 @@ section.post-list {
     scrollbar-width: none;
     margin-left: -#{$space-400};
     padding-left: $space-400;
-
+    
     @media (max-width: 1024px) {
+      scroll-snap-type: x mandatory;
       margin-right: -#{$space-300};
     }
 
@@ -90,6 +91,8 @@ section.post-list {
         width: 80%;
         min-width: 80%;
         padding-right: $space-none;
+        scroll-snap-align: start;
+        scroll-margin-left: $space-400;
   
         &:last-child {
           margin-right: $space-300;
