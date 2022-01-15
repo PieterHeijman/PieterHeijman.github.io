@@ -5,14 +5,14 @@ date: 2021-09-02
 author: Pieter Heijman
 category: Generative Art
 read-time: 1 min
-image: /assets/images/triangles-small.jpg
+image: /assets/images/triangles-small.webp
 image-style: light
 ---
 
-![Triangle Study 1 by Pieter Heijman](/assets/images/triangles-1.jpg)
+![Triangle Study 1 by Pieter Heijman](/assets/images/triangles-1.webp)
 *"Triangle Study 1" by Pieter Heijman*
 
-![Triangle Study 2 by Pieter Heijman](/assets/images/triangles-2.jpg)
+![Triangle Study 2 by Pieter Heijman](/assets/images/triangles-2.webp)
 *"Triangle Study 2" by Pieter Heijman*
 
 **Title:** Triangle Study  

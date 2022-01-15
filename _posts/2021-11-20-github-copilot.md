@@ -5,7 +5,7 @@ date: 2021-11-20
 author: Pieter Heijman
 category: Development
 read-time: 6 min
-image: /assets/images/placeholder.jpg
+image: /assets/images/placeholder.webp
 image-style: dark
 ---
 

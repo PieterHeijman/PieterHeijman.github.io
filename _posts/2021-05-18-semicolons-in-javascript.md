@@ -5,7 +5,7 @@ date: 2021-05-17
 author: Pieter Heijman
 category: Front-end development
 read-time: 3 min
-image: /assets/images/placeholder.jpg
+image: /assets/images/placeholder.webp
 image-style: dark
 ---
 

@@ -5,7 +5,7 @@ date: 2021-05-19
 author: Pieter Heijman
 category: Tutorial
 read-time: 5 min
-image: /assets/images/placeholder.jpg
+image: /assets/images/placeholder.webp
 image-style: dark
 ---
 

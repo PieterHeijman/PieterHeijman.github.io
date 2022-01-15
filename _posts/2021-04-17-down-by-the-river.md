@@ -5,14 +5,14 @@ date: 2021-04-17
 author: Pieter Heijman
 category: Generative Art
 read-time: <1 min
-image: /assets/images/down-in-the-river-detail-thumb.jpg
+image: /assets/images/down-in-the-river-detail-thumb.webp
 image-style: dark
 ---
 
-![Down by the River 2020 - Pieter Heijman](/assets/images/down-in-the-river-full.jpg)
+![Down by the River 2020 - Pieter Heijman](/assets/images/down-in-the-river-full.webp)
 *Down by the River 2020 - Pieter Heijman*
 
-![Detail image of Down by the River](/assets/images/down-in-the-river-detail.jpg)
+![Detail image of Down by the River](/assets/images/down-in-the-river-detail.webp)
 *Detail image of Down by the River*
 
 **Title**: Down by the River  

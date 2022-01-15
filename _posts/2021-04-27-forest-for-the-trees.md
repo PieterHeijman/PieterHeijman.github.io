@@ -5,14 +5,14 @@ date: 2021-04-27
 author: Pieter Heijman
 category: Generative Art
 read-time: 1 min
-image: /assets/images/forest for the trees-detail-thumb.jpg
+image: /assets/images/forest for the trees-detail-thumb.webp
 image-style: dark
 ---
 
-![Forest for the Trees by Pieter Heijman](/assets/images/forest for the trees.jpg)
+![Forest for the Trees by Pieter Heijman](/assets/images/forest for the trees.webp)
 *"Forest for the Trees" by Pieter Heijman*
 
-![Detail shot of Forest for the Trees](/assets/images/forest for the trees-detail.jpg)
+![Detail shot of Forest for the Trees](/assets/images/forest for the trees-detail.webp)
 *Detail shot of "Forest for the Trees"*
 
 **Title:** Forest for the Trees  

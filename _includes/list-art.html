@@ -1,4 +1,4 @@
 <li class="post">
-  <a class="item-inner" href="{{ post.url }}" {% if post.image %} style="background-image: url('{{ post.image }}')" {% endif %} loading="lazy"></a>
+  <a class="item-inner" href="{{ post.url }}" aria-label="{{ post.title }}" {% if post.image %} style="background-image: url('{{ post.image }}')" {% endif %} loading="lazy"></a>
   <h3>{{ post.title }}</h3>
 </li>

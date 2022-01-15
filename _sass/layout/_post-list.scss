@@ -154,6 +154,7 @@ section.post-list {
         background-color: map-get($colors, "starless-sky");
         color: map-get($colors, "white");
         align-items: flex-end;
+        justify-content: flex-end;
 
         div {
           font-weight: 700;

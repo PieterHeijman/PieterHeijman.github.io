@@ -5,14 +5,14 @@ date: 2021-04-25
 author: Pieter Heijman
 category: Generative Art
 read-time: 1 min
-image: /assets/images/attractor-detail-thumb.jpg
+image: /assets/images/attractor-detail-thumb.webp
 image-style: dark
 ---
 
-![Attractors by Pieter Heijman](/assets/images/attractor.jpg)
+![Attractors by Pieter Heijman](/assets/images/attractor.webp)
 *"Attractors" by Pieter Heijman*
 
-![Detail view of Attractors](/assets/images/attractor-detail.jpg)
+![Detail view of Attractors](/assets/images/attractor-detail.webp)
 *A detail view of "Attractors"*
 
 **Title:** Attractors  

@@ -38,7 +38,7 @@
     }
 
     .personalia {
-      margin-bottom: $space-400;
+      margin-bottom: $space-500;
     }
 
     .title,
@@ -49,8 +49,13 @@
       margin-bottom: $space-200;
     }
 
+    h3 {
+      margin-bottom: 0;
+    }
+
     .title {
       font-weight: 700;
+      margin-bottom: $space-400;
     }
   }
 

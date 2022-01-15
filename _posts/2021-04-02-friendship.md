@@ -5,11 +5,11 @@ date: 2021-04-02
 author: Pieter Heijman
 category: Generative Art
 read-time: 1 min
-image: /assets/images/friendship-detail-thumb.jpg
+image: /assets/images/friendship-detail-thumb.webp
 image-style: dark
 ---
 
-![Friendship by Pieter Heijman](/assets/images/friendship.jpg)
+![Friendship by Pieter Heijman](/assets/images/friendship.webp)
 *"Friendship" by Pieter Heijman*
 
 **Title:** Friendship  
