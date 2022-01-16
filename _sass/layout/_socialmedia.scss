@@ -1,0 +1,27 @@
+section.social-share {
+  .title {
+    font-weight: 700;
+  }
+
+  .links {
+    padding: 0;
+    margin: $space-200 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: $space-300;
+
+      a {
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
