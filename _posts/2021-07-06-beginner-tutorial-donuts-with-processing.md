@@ -5,7 +5,7 @@ date: 2021-05-17
 author: Pieter Heijman
 category: Tutorial
 read-time: 15 min
-image: /assets/images/beginner-tutorial-donuts-with-processing/4.png
+image: /assets/images/beginner-tutorial-donuts-with-processing/4.webp
 image-style: dark
 ---
 
@@ -116,7 +116,7 @@ Lastly, the `circle()` function draws the actual circle. The first two numbers s
 
 Let's run our sketch to see what we got.
 
-![/assets/images/beginner-tutorial-donuts-with-processing/1.png](/assets/images/beginner-tutorial-donuts-with-processing/1.png)
+![/assets/images/beginner-tutorial-donuts-with-processing/1.webp](/assets/images/beginner-tutorial-donuts-with-processing/1.webp)
 
 ## Step 4: The glaze
 
@@ -135,7 +135,7 @@ strokeWeight(glazeWeight);
 circle(width / 2, height / 2, circleSize);
 ```
 
-![/assets/images/beginner-tutorial-donuts-with-processing/2.png](/assets/images/beginner-tutorial-donuts-with-processing/2.png)
+![/assets/images/beginner-tutorial-donuts-with-processing/2.webp](/assets/images/beginner-tutorial-donuts-with-processing/2.webp)
 
 Now, this is beginning to look like an actual donut. It's just a bit too clean. Glaze will always have a few runs and drips. 
 
@@ -176,7 +176,7 @@ Finally, we draw the drip as a circle at the very edge of the glaze. Because we 
 
 Run the sketch again; our donut is starting to really look tasty.
 
-![/assets/images/beginner-tutorial-donuts-with-processing/3.png](/assets/images/beginner-tutorial-donuts-with-processing/3.png)
+![/assets/images/beginner-tutorial-donuts-with-processing/3.webp](/assets/images/beginner-tutorial-donuts-with-processing/3.webp)
 
 ## Step 5: The sprinkles
 
@@ -230,7 +230,7 @@ Finally we use `pop()` to undo the `translate()` and `rotate()` we did. That way
 
 Now it is time to run our sketch one more time to reveal our donut!
 
-![/assets/images/beginner-tutorial-donuts-with-processing/4.png](/assets/images/beginner-tutorial-donuts-with-processing/4.png)
+![/assets/images/beginner-tutorial-donuts-with-processing/4.webp](/assets/images/beginner-tutorial-donuts-with-processing/4.webp)
 
 Here's the full code, in case you missed a step.
 

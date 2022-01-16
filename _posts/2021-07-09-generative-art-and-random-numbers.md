@@ -41,7 +41,7 @@ void draw() {
 
 This generates this gradient:
 
-![/assets/images/generative-art-and-random-numbers/1.png](/assets/images/generative-art-and-random-numbers/1.png)
+![/assets/images/generative-art-and-random-numbers/1.webp](/assets/images/generative-art-and-random-numbers/1.webp)
 
 It generates that precise gradient each and every time I run the code. Let's add some randomness.
 
@@ -71,7 +71,7 @@ void draw() {
 
 I've changed the code to take a random number when determining a point's color. It's a slight change, but the output is very different. Below is an example of what the output could look like.
 
-![/assets/images/generative-art-and-random-numbers/2.png](/assets/images/generative-art-and-random-numbers/2.png)
+![/assets/images/generative-art-and-random-numbers/2.webp](/assets/images/generative-art-and-random-numbers/2.webp)
 
 Each time I run the code now, it looks slightly different. The gradient now looks grainy because for each point a random number is generated that influences the color. 
 
@@ -109,7 +109,7 @@ void draw() {
 
 Our code is changed to use `randomGaussian`. This function returns a number with a mean of 0 and a standard deviation of 1. Technically, the function can return any number, but for our purposes, we're just going to assume they're mostly going to be between -1 and 1. 
 
-![/assets/images/generative-art-and-random-numbers/3.png](/assets/images/generative-art-and-random-numbers/3.png)
+![/assets/images/generative-art-and-random-numbers/3.webp](/assets/images/generative-art-and-random-numbers/3.webp)
 
 The gradient is less visible now because most numbers are going to be close to zero. Multiplying by our current x or y position only has a mild influence on this. 
 
@@ -147,7 +147,7 @@ First, note that noise can have multiple dimensions. In our case, we use two-dim
 
 Also, note that we are picking numbers out of a predefined set. That set changes every time we run the code. But, during the execution of our code, that set is not going to change. So calling `noise` three times in a row for the same x and y-position will result in the same number. In our example code, this means that `red`, `green`, and `blue` are always going to be the same number. The result is the image below.
 
-![/assets/images/generative-art-and-random-numbers/4.png](/assets/images/generative-art-and-random-numbers/4.png)
+![/assets/images/generative-art-and-random-numbers/4.webp](/assets/images/generative-art-and-random-numbers/4.webp)
 
 As you can see, the generated numbers don't jump from highs to lows as normal random numbers would. Instead, the numbers move smoothly from lows to highs. This creates, in our example, an almost cloud-like effect.
 
