@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "es6",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "target": "es5",
+      "jsx": "react",
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "outDir": "assets/build"
+    },
+    "include": ["assets/src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+  }

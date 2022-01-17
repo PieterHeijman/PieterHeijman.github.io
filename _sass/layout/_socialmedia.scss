@@ -1,6 +1,31 @@
 section.social-share {
+  .trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 48px;
+    background-color: map-get($colors, "black");
+    color: map-get($colors, "white");
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    .feather {
+      stroke: map-get($colors, "white");
+    }
+  }
+}
+
+.social-share-content {
+  background-color: map-get($colors, "white");
+  color: map-get($colors, "black");
+  border-radius: 8px;
+  padding: $space-400;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  
   .title {
     font-weight: 700;
+    color: map-get($colors, "white");
   }
 
   .links {
