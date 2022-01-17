@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import * as HoverCard from '@radix-ui/react-hover-card';
+import * as Popover from '@radix-ui/react-popover';
 
 export default class SocialShare {
   hook: HTMLElement;
@@ -12,11 +12,11 @@ export default class SocialShare {
   render() {
     ReactDOM.render(
       <div>
-          <HoverCard.Root>
-            <HoverCard.Trigger className="trigger">
+          <Popover.Root>
+            <Popover.Trigger className="trigger">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-            </HoverCard.Trigger>
-            <HoverCard.Content side="top" sideOffset={8} className="social-share-content">
+            </Popover.Trigger>
+            <Popover.Content side="top" sideOffset={8} className="social-share-content">
               <ul className="links">
                 <li>
                   <a href="https://twitter.com/share?url=https://www.trivialdiscourse.com{{ page.url }}&text={{ page.title }}" target="_blank" aria-label="Share this on Twitter" rel="noopener noreferrer">
@@ -62,8 +62,8 @@ export default class SocialShare {
                   </a>
                 </li>
               </ul>  
-            </HoverCard.Content>
-          </HoverCard.Root>
+            </Popover.Content>
+          </Popover.Root>
       </div>,
       this.hook
     );
