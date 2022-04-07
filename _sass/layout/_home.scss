@@ -1,0 +1,139 @@
+section.home {
+  position: relative;
+  top: 0 - $header-large;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    justify-content: flex-start;
+    height: unset;
+  }
+
+  .intro {
+    flex-basis: 50%;
+    width: 50%;
+    padding: $space-600;
+    margin-top: $header-large;
+    z-index: 1;
+    
+    @media (max-width: 1024px) {
+      width: 100%;
+      min-width: 100%;
+      flex-basis: 100%;
+      padding: $space-300;
+      margin-top: $header-small;
+    }
+
+    .personalia {      
+      h1 {
+        font-weight: 800;
+        font-variation-settings: 'wght' 750;
+        font-size: map-get($font-scale, 900);
+        margin-bottom: $space-400;
+      }
+    }
+  }
+
+  .images {
+    flex-basis: 50%;
+    max-width: 50%;
+    
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    .image-holder {
+      padding: $space-400;
+      height: 100%;
+      width: 85vw;
+      max-width: 85vw;
+      display: grid;
+      gap: $space-500;
+      grid-template-areas: 
+        "a a a b b b b g g g j j"
+        "a a a b b b b g g g j j"
+        "c c c b b b b h h h k k"
+        "c c c b b b b h h h k k"
+        "c c c f e e e i i l k k";
+   
+      @keyframes image1 {
+        0% {
+          transform: translate(0, 24px);
+        }
+        50% {
+          transform: translate(-100vw, 24px);
+        }
+        100% {
+          transform: translate(0, 24px);
+        }
+      }
+
+      @keyframes image2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(-100vw, 0);
+        }
+        0% {
+          transform: translate(0, 0);
+        }
+      }
+
+      @keyframes image3 {
+        0% {
+          transform: translate(-32px, 5px);
+        }
+        50% {
+          transform: translate(-100vw, 5px);
+        }
+        0% {
+          transform: translate(-32px, 5px);
+        }
+      }
+
+      .image {
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 100%;
+        }
+      }
+
+      .image1 {
+        grid-area: b;
+        animation: image1 700s linear infinite; 
+      }
+      
+      .image2 {
+        grid-area: c;
+        animation: image2 900s linear infinite; 
+      }
+      
+      .image3 {
+        grid-area: a;
+        animation: image3 630s linear infinite; 
+      }
+
+      .image4 {
+        grid-area: g;
+        animation: image3 710s linear infinite; 
+      }
+
+      .image5 {
+        grid-area: h;
+        animation: image2 690s linear infinite; 
+      }
+    }
+  }
+}
