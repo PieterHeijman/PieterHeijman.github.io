@@ -5,7 +5,7 @@ date: 2022-04-09
 author: Pieter Heijman
 category: Generative Art
 read-time: 1 min
-image: /assets/images/maelstrom-1-thumb.jpg
+image: /assets/images/maelstrom-1-thumb.webp
 image-style: dark
 ---
 
